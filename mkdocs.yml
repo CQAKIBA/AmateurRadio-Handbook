@@ -1,0 +1,17 @@
+site_name: アマチュア無線ハンドブック
+site_description: 現代のアマチュア無線を、運用・技術・製作・測定・実験・研究まで扱うオープンハンドブック
+docs_dir: docs
+
+nav:
+  - ホーム: index.md
+  - このプロジェクトについて: about.md
+  - GitHubで編集する: github.md
+  - クラブ・サークル紹介: clubs/index.md
+
+theme:
+  name: mkdocs
+
+markdown_extensions:
+  - tables
+  - fenced_code
+  - footnotes
