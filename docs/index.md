@@ -2,7 +2,7 @@
 
 このページはハンドブック本文の入口です。
 
-> **重要:** 利用・投稿の前に **[ライセンスと利用条件](../LICENSE.md)** と **[投稿・編集ルール](../CONTRIBUTING.md)** を確認してください。
+> **重要:** 利用・投稿の前に **[ライセンスと利用条件](https://github.com/CQAKIBA/AmateurRadio-Handbook/blob/main/LICENSE.md)** と **[投稿・編集ルール](https://github.com/CQAKIBA/AmateurRadio-Handbook/blob/main/CONTRIBUTING.md)** を確認してください。
 
 本ハンドブックは、アマチュア無線を「使う」ための説明だけでなく、**技術を理解する・作る・測る・実験する・新しい遊び方を考える**ための資料を目指します。
 
@@ -14,8 +14,8 @@
 
 - [このプロジェクトについて](about.md)
 - [GitHubを使ってハンドブックを編集する](github.md)
-- [ライセンスと利用条件](../LICENSE.md)
-- [投稿・編集ルール](../CONTRIBUTING.md)
+- [ライセンスと利用条件](https://github.com/CQAKIBA/AmateurRadio-Handbook/blob/main/LICENSE.md)
+- [投稿・編集ルール](https://github.com/CQAKIBA/AmateurRadio-Handbook/blob/main/CONTRIBUTING.md)
 
 # 0章 概要
 
@@ -483,8 +483,8 @@
 - Pull Request
 - レビュー
 - Contribution
-- [投稿・編集ルール](../CONTRIBUTING.md)
-- [ライセンスと利用条件](../LICENSE.md)
+- [投稿・編集ルール](https://github.com/CQAKIBA/AmateurRadio-Handbook/blob/main/CONTRIBUTING.md)
+- [ライセンスと利用条件](https://github.com/CQAKIBA/AmateurRadio-Handbook/blob/main/LICENSE.md)
 - AI・LLMを編集支援に使う
 - 出典を書く
 - 実験結果を書く
