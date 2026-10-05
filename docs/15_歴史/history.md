@@ -423,8 +423,10 @@
   https://www.docomo.ne.jp/corporate/technology/rd/technical_journal/
 - KDDI「au Starlink Direct」提供開始  
   https://newsroom.kddi.com/news/detail/kddi_nr-533_3815.html
-- radiko 本格サービス開始に関する資料  
-  https://radiko.jp/
+- ITmedia NEWS「Starlink 日本でサービス開始」  
+  https://www.itmedia.co.jp/news/articles/2210/11/news109.html
+- AV Watch「radikoが本格配信」  
+  https://av.watch.impress.co.jp/docs/news/410857.html
 - NHK ラジオ放送再編案内  
   https://saiho.nhk.or.jp/
 
