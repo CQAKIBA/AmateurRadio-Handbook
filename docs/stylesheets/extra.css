@@ -28,3 +28,76 @@
 
 /* Do not add a permanent background to the current page/heading.
    Material's own active-link styling remains visible as-is. */
+
+/*
+ * Article heading hierarchy.
+ *
+ * H1: pale blue marker.
+ * H2: blue square + pale blue marker.
+ * H3: blue square on plain background.
+ *
+ * Selectors are limited to .md-typeset so navigation/sidebar headings keep
+ * Material for MkDocs' original appearance.
+ */
+
+:root {
+  --handbook-heading-accent: #1976b9;
+  --handbook-heading-marker: rgba(92, 190, 235, 0.22);
+}
+
+/* Page title: broad, pale blue marker behind the lower half of the text. */
+.md-typeset h1 {
+  display: table;
+  padding: 0 0.10em;
+  color: var(--md-default-fg-color);
+  background:
+    linear-gradient(
+      transparent 48%,
+      var(--handbook-heading-marker) 48%,
+      var(--handbook-heading-marker) 92%,
+      transparent 92%
+    );
+}
+
+/* H2: blue square at the left + pale blue marker. */
+.md-typeset h2 {
+  position: relative;
+  display: table;
+  padding: 0 0.12em 0 0.82em;
+  color: var(--md-default-fg-color);
+  background:
+    linear-gradient(
+      transparent 48%,
+      var(--handbook-heading-marker) 48%,
+      var(--handbook-heading-marker) 92%,
+      transparent 92%
+    );
+}
+
+.md-typeset h2::before {
+  content: "";
+  position: absolute;
+  left: 0.08em;
+  top: 0.42em;
+  width: 0.42em;
+  height: 0.42em;
+  background-color: var(--handbook-heading-accent);
+}
+
+/* H3: blue square at the left, no marker background. */
+.md-typeset h3 {
+  position: relative;
+  padding-left: 0.82em;
+  color: var(--md-default-fg-color);
+}
+
+.md-typeset h3::before {
+  content: "";
+  position: absolute;
+  left: 0.08em;
+  top: 0.43em;
+  width: 0.38em;
+  height: 0.38em;
+  background-color: var(--handbook-heading-accent);
+}
+
