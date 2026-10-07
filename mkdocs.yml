@@ -42,6 +42,9 @@ markdown_extensions:
   - fenced_code
   - footnotes
 
+extra_css:
+  - stylesheets/extra.css
+
 extra_javascript:
   - https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js
   - javascripts/mermaid-init.js
