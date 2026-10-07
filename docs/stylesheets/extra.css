@@ -1,0 +1,30 @@
+/*
+ * Site-specific visual tweaks.
+ *
+ * Keep article body links untouched.  The hover treatment below is limited
+ * to Material for MkDocs' left navigation and right-hand table of contents.
+ */
+
+:root {
+  --handbook-nav-hover-bg: rgba(255, 0, 204, 0.14);
+}
+
+/* Left navigation + right page index: pale magenta bar on hover/focus. */
+.md-sidebar--primary .md-nav__link[href],
+.md-sidebar--secondary .md-nav__link[href] {
+  box-sizing: border-box;
+  border-radius: 0.15rem;
+  transition:
+    background-color 90ms ease-out,
+    color 90ms ease-out;
+}
+
+.md-sidebar--primary .md-nav__link[href]:hover,
+.md-sidebar--primary .md-nav__link[href]:focus-visible,
+.md-sidebar--secondary .md-nav__link[href]:hover,
+.md-sidebar--secondary .md-nav__link[href]:focus-visible {
+  background-color: var(--handbook-nav-hover-bg);
+}
+
+/* Do not add a permanent background to the current page/heading.
+   Material's own active-link styling remains visible as-is. */
