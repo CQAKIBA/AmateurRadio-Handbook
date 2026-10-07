@@ -1,5 +1,9 @@
 site_name: アマチュア無線ハンドブック
 site_description: 現代のアマチュア無線を、運用・技術・製作・測定・実験・研究まで扱うオープンハンドブック
+
+site_url: https://cqakiba.github.io/AmateurRadio-Handbook/
+repo_url: https://github.com/CQAKIBA/AmateurRadio-Handbook
+
 docs_dir: docs
 
 nav:
