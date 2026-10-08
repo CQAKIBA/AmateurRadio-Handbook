@@ -109,7 +109,7 @@
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
-  gap: 4px 16px;
+  gap: 4px 2em;
 }
 
 .md-typeset ul.flex > li {
