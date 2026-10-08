@@ -105,14 +105,14 @@
 }
 
 /* 縦長すぎるリストを崩す */
-.md-typeset ul.flex {
+.md-typeset .flex-list > ul {
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
-  gap: 4px 2em;
+  gap: 0.25em 2em;
 }
 
-.md-typeset ul.flex > li {
+.md-typeset .flex-list > ul > li {
   margin: 0;
   padding-bottom: 1px;
   white-space: nowrap;
