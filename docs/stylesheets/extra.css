@@ -48,7 +48,7 @@
 /* Page title: broad, pale blue marker behind the lower half of the text. */
 .md-typeset h1 {
   display: table;
-  padding: 0 0.10em;
+  padding: 0.1em 1em 0.10em 0.5em;
   color: var(--md-default-fg-color);
   background:
   linear-gradient(
@@ -61,7 +61,6 @@
 /* H2: blue square at the left + pale blue marker. */
 .md-typeset h2 {
   position: relative;
-  display: table;
   padding: 0 0.12em 0 0.82em;
   color: var(--md-default-fg-color);
   background:
