@@ -108,12 +108,13 @@
 .md-typeset ul.flex {
   display: flex;
   flex-wrap: wrap;
-  gap: 0 10px;
-  padding-left: 0;
+  align-items: flex-start;
+  gap: 4px 16px;
 }
 
-.md-typeset ul.flex li {
+.md-typeset ul.flex > li {
+  margin: 0;
+  padding-bottom: 1px;
   white-space: nowrap;
   border-bottom: 1px solid #9ecae1;
-  padding-bottom: 1px;
 }
