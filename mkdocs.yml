@@ -44,6 +44,7 @@ markdown_extensions:
   - footnotes
   - attr_list
   - md_in_html
+  - admonition
 
 extra_css:
   - stylesheets/extra.css
