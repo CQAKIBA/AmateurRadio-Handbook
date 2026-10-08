@@ -5,6 +5,12 @@
  * to Material for MkDocs' left navigation and right-hand table of contents.
  */
 
+/*
+メモ：
+縦長すぎるリストを崩す <ul class="flex">
+
+*/
+
 :root {
   --handbook-nav-hover-bg: rgba(255, 0, 204, 0.2);
 }
@@ -98,3 +104,16 @@
   background-color: var(--handbook-heading-accent);
 }
 
+/* 縦長すぎるリストを崩す */
+ul.flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 10px;
+  padding-left: 0;
+}
+
+ul.flex li {
+  white-space: nowrap;
+  border-bottom: 1px solid #9ecae1;
+  padding-bottom: 1px;
+}
