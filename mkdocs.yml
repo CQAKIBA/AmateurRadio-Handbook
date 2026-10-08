@@ -21,6 +21,7 @@ nav:
   - 歴史:
       - 日本のアマチュア無線のはじまり: 15_歴史/日本のアマチュア無線のはじまり.md
       - アマチュア無線と通信技術の歴史: 15_歴史/history.md
+      - アマチュア無線が登場する作品: 15_歴史/アマチュア無線が登場する作品.md
   - このプロジェクト:
       - このプロジェクトについて: about.md
       - GitHubで編集する: github.md
@@ -43,6 +44,7 @@ markdown_extensions:
   - footnotes
   - attr_list
   - md_in_html
+  - admonition
 
 extra_css:
   - stylesheets/extra.css
