@@ -13,7 +13,17 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   mermaid.initialize({
     startOnLoad: false,
-    securityLevel: "strict"
+    securityLevel: "strict",
+    layout: "elk",
+
+    // Keep node labels on one line unless the diagram source contains an
+    // explicit line break such as <br>.  Mermaid's flowchart renderer wraps
+    // labels at wrappingWidth during layout, before the responsive SVG is
+    // scaled to the page width.
+    markdownAutoWrap: false,
+    flowchart: {
+      wrappingWidth: 4096
+    }
   });
 
   await mermaid.run({
