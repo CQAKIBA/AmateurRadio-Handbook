@@ -1,5 +1,7 @@
 # アマチュア無線ハンドブック
 
+Site is live at https://cqakiba.github.io/AmateurRadio-Handbook/
+
 > **重要:** 投稿・利用の前に **[ライセンスと利用条件](LICENSE.md)** と **[投稿・編集ルール](CONTRIBUTING.md)** を確認してください。
 
 > **ライセンス概要**  
