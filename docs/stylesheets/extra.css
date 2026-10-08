@@ -6,7 +6,7 @@
  */
 
 :root {
-  --handbook-nav-hover-bg: rgba(255, 0, 204, 0.14);
+  --handbook-nav-hover-bg: rgba(255, 0, 204, 0.2);
 }
 
 /* Left navigation + right page index: pale magenta bar on hover/focus. */
@@ -42,7 +42,7 @@
 
 :root {
   --handbook-heading-accent: #1976b9;
-  --handbook-heading-marker: rgba(92, 190, 235, 0.22);
+  --handbook-heading-marker: rgba(92, 190, 235);
 }
 
 /* Page title: broad, pale blue marker behind the lower half of the text. */
@@ -51,12 +51,11 @@
   padding: 0 0.10em;
   color: var(--md-default-fg-color);
   background:
-    linear-gradient(
-      transparent 48%,
-      var(--handbook-heading-marker) 48%,
-      var(--handbook-heading-marker) 92%,
-      transparent 92%
-    );
+  linear-gradient(
+    to bottom,
+    transparent 0%,
+    color-mix( in srgb, var(--handbook-heading-marker) 50%, transparent) 100%
+  );
 }
 
 /* H2: blue square at the left + pale blue marker. */
@@ -66,21 +65,20 @@
   padding: 0 0.12em 0 0.82em;
   color: var(--md-default-fg-color);
   background:
-    linear-gradient(
-      transparent 48%,
-      var(--handbook-heading-marker) 48%,
-      var(--handbook-heading-marker) 92%,
-      transparent 92%
-    );
+  linear-gradient(
+    to bottom,
+    transparent 0%,
+    color-mix( in srgb, var(--handbook-heading-marker) 50%, transparent) 100%
+  );
 }
 
 .md-typeset h2::before {
   content: "";
   position: absolute;
-  left: 0.08em;
-  top: 0.42em;
-  width: 0.42em;
-  height: 0.42em;
+  left: 0em;
+  top: 0em;
+  width: 0.6em;
+  height: 100%;
   background-color: var(--handbook-heading-accent);
 }
 
@@ -94,10 +92,10 @@
 .md-typeset h3::before {
   content: "";
   position: absolute;
-  left: 0.08em;
-  top: 0.43em;
-  width: 0.38em;
-  height: 0.38em;
+  left: 0em;
+  top: 0em;
+  width: 0.4em;
+  height: 100%;
   background-color: var(--handbook-heading-accent);
 }
 
