@@ -60,7 +60,7 @@
   background: linear-gradient(
     to bottom,
     transparent 0%,
-    color-mix(in srgb, var(--heading-color) 20%, transparent) 100%
+    color-mix(in srgb, var(--heading-color) 33%, transparent) 100%
   );
 }
 
