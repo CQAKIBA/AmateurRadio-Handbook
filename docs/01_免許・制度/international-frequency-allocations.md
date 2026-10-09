@@ -88,12 +88,12 @@ VHF以上では通常、見通し・地形・アンテナ高の影響が大き�
 
 **地域共通の推奨プランと、特定の国で認められる周波数は別です。** 欧州でも国によって70 MHz帯、5 MHz帯、マイクロ波帯などの扱いが違います。アフリカ・中東についても、欧州の周波数表をそのまま適用できるわけではありません。
 
-| 国・グループ | 確認先 | 読み方 |
+| 国・地域 | バンドプラン・制度資料 | 主な特徴・注意点 |
 | --- | --- | --- |
-| 欧州各国の共通的な運用慣行 | [IARU Region 1](https://www.iaru-r1.org/on-the-air/band-plans/) | まず共通の推奨プランを確認し、各国の免許条件へ進む。欧州全体を一国ずつ同じ文章で繰り返さない。 |
-| **英国** | [RSGB Band Plans](https://rsgb.org/main/operating/band-plans/) | 2026年版を公開。Region 1案に国内での違いを反映した資料。最終的な送信条件はOfcomの免許条件による。 |
-| **ドイツ** | [DARC Bandplan](https://www.darc.de/funkbetrieb/bandplan/) | HFとVHF以上の資料を分けて案内。法的な条件はドイツ国内の制度で確認する。 |
-| **アフリカ・中東各国** | [IARU加盟団体一覧](https://www.iaru.org/reference/member-societies/)／[ITU Radio Regulations](https://www.itu.int/pub/R-REG-RR-2024/) | 主管庁・国別脚注が重要。地域全体を「欧州と同一条件」とせず、公開された各国資料を確認する。 |
+| **Region 1共通** | [IARU Region 1](https://www.iaru-r1.org/on-the-air/band-plans/) | CW・音声・データなどの運用区分を地域内で調整するための推奨バンドプラン。各国の使用可能な周波数や出力を統一するものではない。 |
+| **英国** | [RSGB Band Plans](https://rsgb.org/main/operating/band-plans/) | RSGBは英国の運用状況を反映した2026年版を公開。使用可能な周波数・出力等の条件はOfcomの免許制度による。 |
+| **ドイツ** | [DARC Bandplan](https://www.darc.de/funkbetrieb/bandplan/) | DARCは短波とVHF以上のバンドプランを公開。推奨される運用区分と、国内法令上の送信条件は別に定められている。 |
+| **アフリカ・中東の各国** | [IARU加盟団体一覧](https://www.iaru.org/reference/member-societies/)／[ITU Radio Regulations](https://www.itu.int/pub/R-REG-RR-2024/) | 欧州と同じRegion 1でも、国ごとに許可される周波数帯や免許制度が異なる。ITUの国別脚注による分配の違いもある。 |
 
 たとえばCEPTによる資格・外国運用の相互承認などの仕組みがあっても、それだけで**欧州全域の使用周波数・出力・バンドプランが単一になるわけではありません**。
 
