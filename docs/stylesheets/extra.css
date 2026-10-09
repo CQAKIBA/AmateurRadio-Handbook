@@ -46,62 +46,61 @@
  * Material for MkDocs' original appearance.
  */
 
-:root {
-  --handbook-heading-accent: #1976b9;
-  --handbook-heading-marker: rgba(92, 190, 235);
+/* 見出しの共通設定 */
+.md-typeset h1,
+.md-typeset h2,
+.md-typeset h3 {
+  --heading-color: #1976b9;
+  color: var(--md-default-fg-color);
 }
 
-/* Page title: broad, pale blue marker behind the lower half of the text. */
+/* H1・H2：上は透明、下は指定色20%のグラデーション */
+.md-typeset h1,
+.md-typeset h2 {
+  background: linear-gradient(
+    to bottom,
+    transparent 0%,
+    color-mix(in srgb, var(--heading-color) 20%, transparent) 100%
+  );
+}
+
+/* H1：ページタイトル */
 .md-typeset h1 {
   display: table;
   padding: 0.1em 1em 0.10em 0.5em;
-  color: var(--md-default-fg-color);
-  background:
-  linear-gradient(
-    to bottom,
-    transparent 0%,
-    color-mix( in srgb, var(--handbook-heading-marker) 50%, transparent) 100%
-  );
 }
 
-/* H2: blue square at the left + pale blue marker. */
+/* H2：章の見出し */
 .md-typeset h2 {
   position: relative;
   padding: 0 0.12em 0 0.82em;
-  color: var(--md-default-fg-color);
-  background:
-  linear-gradient(
-    to bottom,
-    transparent 0%,
-    color-mix( in srgb, var(--handbook-heading-marker) 50%, transparent) 100%
-  );
 }
 
-.md-typeset h2::before {
-  content: "";
-  position: absolute;
-  left: 0em;
-  top: 0em;
-  width: 0.6em;
-  height: 100%;
-  background-color: var(--handbook-heading-accent);
-}
-
-/* H3: blue square at the left, no marker background. */
+/* H3：小見出し */
 .md-typeset h3 {
   position: relative;
   padding-left: 0.82em;
-  color: var(--md-default-fg-color);
 }
 
+/* H2・H3：左側の四角形（指定色100%） */
+.md-typeset h2::before,
 .md-typeset h3::before {
   content: "";
   position: absolute;
-  left: 0em;
-  top: 0em;
-  width: 0.4em;
+  left: 0;
+  top: 0;
   height: 100%;
-  background-color: var(--handbook-heading-accent);
+  background-color: var(--heading-color);
+}
+
+/* H2の四角形 */
+.md-typeset h2::before {
+  width: 0.6em;
+}
+
+/* H3の四角形 */
+.md-typeset h3::before {
+  width: 0.4em;
 }
 
 /* 縦長すぎるリストを崩す */
@@ -117,14 +116,6 @@
   padding-bottom: 1px;
   white-space: nowrap;
   border-bottom: 1px solid #9ecae1;
-}
-
-/* Mermaidのノードテキストが勝手に折り返されるのを防ぐ */
-.mermaid svg text, 
-.mermaid svg .node label, 
-.mermaid svg .node text {
-  white-space: nowrap !important;
-  word-break: keep-all !important;
 }
 
 /* Image galleries rendered by gallery(height, file1, file2, ...). */
