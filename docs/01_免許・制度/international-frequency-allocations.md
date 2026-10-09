@@ -78,7 +78,7 @@ ITUは周波数分配のために世界を三つの地域へ分けています�
 | Region 2共通の目安 | [IARU Region 2](https://www.iaru-r2.org/en/reference/band-plans/) | 地域内の運用慣行を調べる入口。国ごとの使用権限を保証しない。 |
 | **米国** | [ARRL Frequency Allocations](https://www.arrl.org/frequency-allocations)／[ARRL Band Plan](https://www.arrl.org/band-plan)／[FCC規則（eCFR, Part 97）](https://www.ecfr.gov/current/title-47/chapter-I/subchapter-D/part-97) | 144～148 MHz、420～450 MHz、222～225 MHzなどが特徴的。免許クラス、用途、場所に応じた制限を必ず確認する。 |
 | **カナダ** | [RAC Band Plans](https://www.rac.ca/operating/bandplans/) | 米国と共通する帯域が多くても、規制と国内運用慣行は別。RACの帯域別ページに制定時期の古い資料もあるため更新年を確認する。 |
-| **ブラジル** | [Anatel：Radioamador](https://www.gov.br/anatel/pt-br/regulado/outorga/radioamador-e-radio-cidadao/radioamador)／[Anatelの周波数分配計画（2026年、PDFF）](https://informacoes.anatel.gov.br/legislacao/resolucoes/2026/2157-resolucao-789) | 南米の例。2025～2026年にも関連規則が更新されており、米加の表を代用せずAnatelの資料を参照する。 |
+| **ブラジル** | [Anatel：Radioamador](https://www.gov.br/anatel/pt-br/regulado/outorga/radioamador-e-radio-cidadao/radioamador)／[Anatelの周波数分配計画（2026年）](https://informacoes.anatel.gov.br/legislacao/resolucoes/2026/2157-resolucao-789) | 南米の例。2025～2026年にも関連規則が更新されており、米加の表を代用せずAnatelの資料を参照する。 |
 | **その他の中南米・カリブ地域** | [IARU加盟団体一覧](https://www.iaru.org/reference/member-societies/) | 国による一次・二次の違い、国内の使用条件、地域内で異なる周波数慣行を確認する。 |
 
 特に米国で一般的な147 MHz台のFM通信や、米国式420～450 MHz帯の運用を、ほかのRegionの局にそのまま当てはめるのは危険です。
