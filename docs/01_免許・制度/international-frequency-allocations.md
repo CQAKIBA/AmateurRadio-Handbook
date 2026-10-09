@@ -1,0 +1,159 @@
+# 国際的な周波数割当と各国のアマチュアバンド
+
+アマチュア無線は国際的に認められた無線通信業務ですが、**世界中でまったく同じ周波数・出力・電波型式が使えるわけではありません**。ITU（国際電気通信連合）の周波数分配、各国・地域の主管庁が定める使用条件、IARU（国際アマチュア無線連合）や各国の無線連盟によるバンドプランが重なって成り立っています。
+
+このページでは、原則として **ITU Region 1・2・3 の共通部分をまとめ、国や地域ごとの差が重要なところだけを補足**します。人工衛星は地域境界を越えるため、独立した節で扱います。全世界の免許条件を網羅した法令表ではなく、**調べ方の入口と、違いが生じる理由を説明する資料**です。
+
+> **確認時点：2026年10月。** 周波数分配・免許・バンドプランは改正されます。周波数・出力・モードの記載は例示であり、実際の送信を許可するものではありません。運用する国・地域の最新の法令と、資格・免許の条件を必ず確認してください。
+
+## 最初に区別したい四つの層
+
+| 層 | 主な主体 | 何を決めているか |
+| --- | --- | --- |
+| 国際的な周波数分配 | ITU、世界無線通信会議（WRC） | その帯域をどの無線通信業務へ、どの地域で、どの優先順位で分配するか |
+| 国内の周波数分配・使用制度 | 各国・地域の主管庁 | 実際にどの帯域をアマチュア局に使用させるか、免許や送信条件はどうするか |
+| 地域別・国内バンドプラン | IARUの各地域組織、国内の無線連盟等 | アマチュアバンドの内部で、CW・音声・データ・衛星等をどう使い分けるか |
+| 個々の局の運用権限 | 主管庁による資格・免許等 | **その運用者・無線局が**どの周波数・設備・出力で送信できるか |
+
+国際的な分配があっても、国内で一般のアマチュア局に許可されているとは限りません。反対に、各国の使用条件が地域の基本形より広い・狭いこともあります。IARUのバンドプランは通常は推奨ですが、国内法に取り込まれている部分があれば法的な意味を持ちます。**IARUの表と国内法が違うときは国内法が優先**します。
+
+基本資料：[ITU Radio Regulations（2024年版）](https://www.itu.int/pub/R-REG-RR-2024/)／[IARUの説明：Amateur Spectrum Access](https://www.iaru.org/spectrum/spectrum-requirements/)／[IARU Band Plans](https://www.iaru.org/reference/band-plans-2/)。
+
+### 一次業務、二次業務、共用
+
+ITUの周波数分配表では、業務への**一次分配（primary）**と**二次分配（secondary）**が区別されます。同じ帯域にアマチュア業務以外の固定、移動、無線標定、無線航行、衛星などの業務が重ねて分配されることもあります。
+
+- **一次分配**：同じ一次業務の間で干渉調整が必要な場合もあり、「その周波数を独占できる」という意味ではありません。
+- **二次分配**：一次業務へ有害な混信を与えず、一次業務からの混信に対して保護を要求できないのが基本です。
+- **国別脚注**：ITUの周波数分配表の脚注（例：5.270）によって、特定の国で分配を追加したり、分配の地位を変えたりします。
+
+したがって「全世界のアマチュアバンド一覧」を作る場合、**単なる周波数表ではなく、Region・脚注・国内制度を一緒に読まなければ正確になりません**。特に50 MHz、430 MHz、1.2 GHz以上や、他業務との共用帯では重要です。
+
+## 三つのITU地域（Region）
+
+ITUは周波数分配のために世界を三つの地域へ分けています。以下はおおまかな案内であり、正確な境界や例外はITUの規則で確認してください。IARUも対応する三つの地域組織を設けています。
+
+| 地域 | おおまかな範囲 | 地域のバンドプラン |
+| --- | --- | --- |
+| **Region 1** | 欧州、アフリカ、中東、北アジアなど | [IARU Region 1：HF・VHF以上](https://www.iaru-r1.org/on-the-air/band-plans/) |
+| **Region 2** | 北米・中米・南米、カリブ海など | [IARU Region 2](https://www.iaru-r2.org/en/reference/band-plans/) |
+| **Region 3** | 東アジア・南アジア・東南アジア、オセアニア、太平洋など | [IARU Region 3](https://www.iaru-r3.org/on-the-air/band-plans/)／[2024年改訂の地域バンドプラン（PDF）](https://www.iaru-r3.org/wp-content/uploads/2025/01/R3-004-Band-Plans-IARU-Region-3.pdf) |
+
+参考：[IARU Regions](https://www.iaru.org/about-us/organisation-and-history/regions/)。
+
+### 違いが見えやすい帯域の例
+
+| 帯域・話題 | 地域共通の考え方と代表的な相違 |
+| --- | --- |
+| **7 MHz帯（40 m）** | Region 1と3のITU上の基本的なアマチュア分配は7.0～7.2 MHz、Region 2は7.0～7.3 MHz。なおRegion 3内のオーストラリアなどでは国内制度で7.2～7.3 MHzも使用でき、ITU地域表だけでは各国の許可帯域を確定できません。 |
+| **144 MHz帯（2 m）** | 日本・韓国・欧州の多くは144～146 MHz。米国・カナダ・オーストラリアなどは144～148 MHzを使います。147 MHzを受信できる無線機であっても、日本の局がそのまま送信できるわけではありません。 |
+| **420～450 MHz付近（70 cm）** | 430～440 MHzは広く知られていますが、米国は420～450 MHzを使用します。Region 3での440～450 MHzのアマチュア業務への追加分配はオーストラリアとフィリピンなど、国別脚注を確認すべき例です。 |
+| **50 MHz・70 MHz付近** | 50 MHz帯は国によって使える範囲や一次・二次の地位が異なります。70 MHz帯は欧州など一部の国で使われますが、Region 1全域で一律に許可されるわけではありません。 |
+| **5 MHz帯（60 m）** | WRC-15による5351.5～5366.5 kHzの二次分配がありますが、各国独自のチャネル・使用範囲・電力条件を持つ場合があります。 |
+| **1.2 GHz帯以上** | GNSS、無線標定、固定、移動等との共用や国内の保護条件の違いが大きいため、「同じ名称のバンドなら同条件」とは扱えません。 |
+
+この表は**各国で使用できる全帯域を列挙したものではありません**。代表的な差の出方を示したものです。以下の地域別リンクから原資料へ進んでください。
+
+## Region 1：欧州・アフリカ・中東・北アジア
+
+地域共通の運用上の目安は[IARU Region 1のバンドプラン](https://www.iaru-r1.org/on-the-air/band-plans/)にまとめられています。HFと50 MHz以上では参照する資料が分かれ、VHF/UHF/SHFについては[Region 1の専用ページ](https://www.iaru-r1.org/about-us/committees-and-working-groups/vhf-uhf-shf-committee-c5/vhf-up-bandplanning/)があります。
+
+**地域共通の推奨プランと、特定の国で認められる周波数は別です。** 欧州でも国によって70 MHz帯、5 MHz帯、マイクロ波帯などの扱いが違います。アフリカ・中東についても、欧州の周波数表をそのまま適用できるわけではありません。
+
+| 国・グループ | 確認先 | 読み方 |
+| --- | --- | --- |
+| 欧州各国の共通的な運用慣行 | [IARU Region 1](https://www.iaru-r1.org/on-the-air/band-plans/) | まず共通の推奨プランを確認し、各国の免許条件へ進む。欧州全体を一国ずつ同じ文章で繰り返さない。 |
+| **英国** | [RSGB Band Plans](https://rsgb.org/main/operating/band-plans/) | 2026年版を公開。Region 1案に国内での違いを反映した資料。最終的な送信条件はOfcomの免許条件による。 |
+| **ドイツ** | [DARC Bandplan](https://www.darc.de/funkbetrieb/bandplan/) | HFとVHF以上の資料を分けて案内。法的な条件はドイツ国内の制度で確認する。 |
+| **アフリカ・中東各国** | [IARU加盟団体一覧](https://www.iaru.org/reference/member-societies/)／[ITU Radio Regulations](https://www.itu.int/pub/R-REG-RR-2024/) | 主管庁・国別脚注が重要。地域全体を「欧州と同一条件」とせず、公開された各国資料を確認する。 |
+
+たとえばCEPTによる資格・外国運用の相互承認などの仕組みがあっても、それだけで**欧州全域の使用周波数・出力・バンドプランが単一になるわけではありません**。
+
+## Region 2：南北アメリカ・カリブ海
+
+[IARU Region 2のバンドプラン](https://www.iaru-r2.org/en/reference/band-plans/)が共通の運用目安です。144～148 MHzなどが広く使われ、地域によっては220 MHz帯や420 MHz帯付近でもRegion 1・3との違いが大きくなります。
+
+| 国・グループ | 確認先 | 読み方 |
+| --- | --- | --- |
+| Region 2共通の目安 | [IARU Region 2](https://www.iaru-r2.org/en/reference/band-plans/) | 地域内の運用慣行を調べる入口。国ごとの使用権限を保証しない。 |
+| **米国** | [ARRL Frequency Allocations](https://www.arrl.org/frequency-allocations)／[ARRL Band Plan](https://www.arrl.org/band-plan)／[FCC規則（eCFR, Part 97）](https://www.ecfr.gov/current/title-47/chapter-I/subchapter-D/part-97) | 144～148 MHz、420～450 MHz、222～225 MHzなどが特徴的。免許クラス、用途、場所に応じた制限を必ず確認する。 |
+| **カナダ** | [RAC Band Plans](https://www.rac.ca/operating/bandplans/) | 米国と共通する帯域が多くても、規制と国内運用慣行は別。RACの帯域別ページに制定時期の古い資料もあるため更新年を確認する。 |
+| **ブラジル** | [Anatel：Radioamador](https://www.gov.br/anatel/pt-br/regulado/outorga/radioamador-e-radio-cidadao/radioamador)／[Anatelの周波数分配計画（2026年、PDFF）](https://informacoes.anatel.gov.br/legislacao/resolucoes/2026/2157-resolucao-789) | 南米の例。2025～2026年にも関連規則が更新されており、米加の表を代用せずAnatelの資料を参照する。 |
+| **その他の中南米・カリブ地域** | [IARU加盟団体一覧](https://www.iaru.org/reference/member-societies/) | 国による一次・二次の違い、国内の使用条件、地域内で異なる周波数慣行を確認する。 |
+
+特に米国で一般的な147 MHz台のFM通信や、米国式420～450 MHz帯の運用を、ほかのRegionの局にそのまま当てはめるのは危険です。
+
+## Region 3：東・南・東南アジア、オセアニア、太平洋
+
+[IARU Region 3の2024年改訂バンドプラン](https://www.iaru-r3.org/wp-content/uploads/2025/01/R3-004-Band-Plans-IARU-Region-3.pdf)では、従来の表から**7.2～7.3 MHzおよび440～450 MHzを地域共通の分配として見せない**よう整理しています。文書の説明によれば、後者はITU脚注5.270に基づき、Region 3ではオーストラリアとフィリピンの追加分配という事情があります。一方で、国内法でさらに広い帯域を認めている場合もあります。**地域プランの空欄は、すべての国で禁止という意味ではありません。**
+
+| 国・グループ | 確認先 | 読み方 |
+| --- | --- | --- |
+| Region 3共通の目安 | [IARU Region 3](https://www.iaru-r3.org/on-the-air/band-plans/)／[2024年改訂PDF](https://www.iaru-r3.org/wp-content/uploads/2025/01/R3-004-Band-Plans-IARU-Region-3.pdf) | 国内差を吸収しない地域共通の推奨事項。 |
+| **日本** | [JARLアマチュアバンドプラン](https://www.jarl.org/Japanese/A_Shiryo/A-3_Band_Plan/A-3-0.htm) | 総務省の周波数使用区別の告示を基礎に整理した資料。144～146 MHz、430～440 MHzなど、他国との差に注意。 |
+| **韓国** | [KARL Band Plan in Korea（2018年公開）](https://karl.or.kr/bbs/board.php?bo_table=info&wr_id=15)／[KARL資料室](https://www.karl.or.kr/bbs/board.php?bo_table=06_02&page=1) | 144～146 MHz、430～440 MHzなど日本に近い部分があるが、呼出周波数・チャネル間隔・国内規則は同じとは限らない。2018年資料だけで最新制度を確定しない。 |
+| **オーストラリア** | [ACMA Spectrum Plan](https://www.acma.gov.au/australian-radiofrequency-spectrum-plan)／[ACMA Amateur Class Licence](https://www.acma.gov.au/amateur-class-licence)／[WIA Band Plans（2026年改訂）](https://www.wia.org.au/members/bandplans/data/) | Region 3内でも144～148 MHzや7.0～7.3 MHzなどが使われる例。法令と連盟の推奨プランを区別する。 |
+| **ニュージーランド** | [NZART Band Plans（2026年更新）](https://nzart.org.nz/info/band-plans/) | Region 3を基本に国内向け調整を加えた資料。主管庁の使用条件も別途確認する。 |
+| **インド** | [ARSI：無線制度・周波数分配資料](https://arsi.info/important-wpc-documents/) | 国内の無線行政（WPC）・2024年のアマチュア業務規則などへの入口。Region 3の表をそのまま免許表にしない。 |
+| **中国本土、香港、マカオ、台湾、東南アジア、太平洋の各国・地域** | [IARU加盟団体一覧](https://www.iaru.org/reference/member-societies/)／[ITU Radio Regulations](https://www.itu.int/pub/R-REG-RR-2024/) | 同じRegionでも管轄の主管庁、制度、免許手続、利用可能帯域は異なる。公的資料を確認できた場合に個別リンクを追加する。 |
+
+### 特殊な例：北朝鮮（朝鮮民主主義人民共和国）
+
+北朝鮮は地理的に**Region 3**に属します。ただし、**ITUの周波数分配にアマチュア業務があること、国内で一般に免許を取得できること、日常的なアマチュア運用が行われていることは、それぞれ別の事実**です。
+
+確認できる具体的な運用記録として、2015年12月に北朝鮮国内から行われた**P5/3Z9DX**の実演運用があります。ARRLは2016年3月、これをDXCCの対象として承認したと公表しています。したがって「北朝鮮からアマチュア無線が一度も発射されたことはない」という説明は正しくありません。
+
+一方、**2026年10月の本調査で、一般向け免許制度や現在の日常的な運用を裏付ける最新の公開一次資料は確認できていません**。このため「現在、誰でも許可を取得できる」とも「法律で全面禁止されている」とも断定しません。外国からの運用には個別の許可・承認が関係し得ます。
+
+出典：[ARRL（2016年3月30日）：P5/3Z9DXのDXCC承認](https://www.arrl.org/news/arrl-okays-p5-3z9dx-north-korea-operation-for-dxcc)。政治的な評価ではなく、**確認できる制度・運用実績・未確認事項を分けて扱う**ための事例です。
+
+## アマチュア衛星業務：Regionとは別に見る
+
+地上のアマチュア業務（amateur service）と、人工衛星の宇宙局を利用する**アマチュア衛星業務（amateur-satellite service）**は、ITU無線通信規則で別々に定義されています。地上局が使える周波数と、衛星へ送信してよい周波数が必ず一致するわけではありません。
+
+また衛星電波は国境を越え、広い地域へ同時に到達します。地上の周波数使用区別だけでは解決できないため、IARUは**アマチュア衛星周波数調整（Satellite Frequency Coordination）**を行っています。この調整は干渉の低減に役立ちますが、**IARUによる調整そのものが打上げ・送信・地上局運用の法的許可になるわけではありません**。
+
+| 周波数帯の例 | 衛星との関係・注意点 |
+| --- | --- |
+| **145.8～146.0 MHz** | 多くのアマチュア衛星で利用される2 m帯の衛星関連区間。地上の通常通信とは区別して扱う。 |
+| **435～438 MHz** | 多くのアマチュア衛星で利用される70 cm帯の衛星関連区間。国別の分配、地上の共用、衛星側の調整結果を確認する。 |
+| **1.2 GHz帯、特に1260～1270 MHz** | 衛星へのアップリンク用途が論点となる帯域。衛星測位（RNSS等）の保護を含む条件・制約を確認する。 |
+| **2.4 GHz帯・5.6 GHz帯・10 GHz帯など** | 高周波の衛星通信実験にも使われるが、衛星業務への分配・他業務との共用・国内の送信条件を個別に調べる必要がある。 |
+
+これらは**主な利用区間の例であって、全衛星の許可周波数や一律の送信可能帯域を示すものではありません**。人工衛星が公表した運用周波数、IARUの調整情報、ITU分配表、地上局が存在する国の条件を別々に確かめる必要があります。
+
+- [IARU：衛星周波数調整の仕組み・調整状況への入口](https://www.iaru.org/reference/satellites/)
+- [IARU：Amateur Satellites（設計・調整の解説）](https://www.iaru.org/reference/satellites/amateur-satellites/)
+- [IARU：衛星周波数調整の技術資料](https://www.iaru.org/wp-content/uploads/2020/02/Amateur-Radio-Satellite-Frequency-Coordination.html)
+- [ITU Radio Regulations 2024](https://www.itu.int/pub/R-REG-RR-2024/)
+
+> **衛星に電波を送るときの注意：**「受信できる」「自国で地上のアマチュア局に分配されている」「衛星の運用者が使っている」という事実のどれか一つだけでは、アップリンクの送信可否は決まりません。
+
+## 何を確認すれば実際に運用できるのか
+
+他国との交信、旅行先での運用、衛星への送信を調べるときは、次の順に確認すると混乱しにくくなります。
+
+1. 運用する場所の**国・地域と主管庁**、国外の資格・免許を使う場合の相互承認条件を確認する。
+2. その国・地域の**周波数分配表**とアマチュア局向けの免許・技術条件を確認する。
+3. 資格区分、許可された帯域、周波数使用区別、出力、モード、設置場所などの制限を確認する。
+4. **IARU地域別・国内連盟のバンドプラン**で、実際の運用区分や国際的な慣行を確認する。
+5. 衛星の場合はさらに**アマチュア衛星業務への分配**、衛星運用者の公表内容、IARU調整情報を確認する。
+
+「世界では使える周波数」よりも、まず**自分の局が、どこから、何の業務として送信するか**が先です。
+
+## 参考資料・リンク集
+
+- [ITU：Radio Regulations, Edition of 2024](https://www.itu.int/pub/R-REG-RR-2024/) — 国際的な無線通信規則。特に第5条の分配表と国別脚注を参照。
+- [IARU：Amateur Spectrum Access](https://www.iaru.org/spectrum/spectrum-requirements/) — 一次・二次、共用の説明。
+- [IARU：Regions](https://www.iaru.org/about-us/organisation-and-history/regions/) — 地域区分。
+- [IARU：Band Plans](https://www.iaru.org/reference/band-plans-2/) — 三地域のリンク集。
+- [IARU：Member Societies](https://www.iaru.org/reference/member-societies/) — 各国・地域の無線連盟への入口。
+- [IARU Region 3：2024年改訂バンドプラン](https://www.iaru-r3.org/wp-content/uploads/2025/01/R3-004-Band-Plans-IARU-Region-3.pdf) — Region 3の整理方針、国別の例外の注意。
+- [IARU：Satellites](https://www.iaru.org/reference/satellites/) — 衛星の周波数調整。
+- [ARRL：P5/3Z9DXの運用確認](https://www.arrl.org/news/arrl-okays-p5-3z9dx-north-korea-operation-for-dxcc) — 北朝鮮の例についての具体的な歴史資料。
+
+### 今後の追記方針
+
+このページは**国の数だけ似た説明を複製することを目的にしません**。原則が同じ地域・国は共通の説明と一次資料へのリンクにまとめ、異なる周波数帯、脚注、国内制度、運用上の注意が確認できた場合に具体的な例を追加します。リンク先に更新年がある場合は確認し、公開資料のない制度を推測で補わないようにします。
+
+関連：[アマチュア無線とは](../00_概要/アマチュア無線とは.md)／[ハンドブック目次](../index.md)。
