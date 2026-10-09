@@ -37,7 +37,7 @@ ITUは周波数分配のために世界を三つの地域へ分けています�
 | --- | --- | --- |
 | **Region 1** | 欧州、アフリカ、中東、北アジアなど | [IARU Region 1：HF・VHF以上](https://www.iaru-r1.org/on-the-air/band-plans/) |
 | **Region 2** | 北米・中米・南米、カリブ海など | [IARU Region 2](https://www.iaru-r2.org/en/reference/band-plans/) |
-| **Region 3** | 東アジア・南アジア・東南アジア、オセアニア、太平洋など | [IARU Region 3](https://www.iaru-r3.org/on-the-air/band-plans/)／[2024年改訂の地域バンドプラン（PDF）](https://www.iaru-r3.org/wp-content/uploads/2025/01/R3-004-Band-Plans-IARU-Region-3.pdf) |
+| **Region 3** | 日本・東アジア・南アジア・東南アジア、オセアニア、太平洋など | [IARU Region 3](https://www.iaru-r3.org/on-the-air/band-plans/)／[2024年改訂の地域バンドプラン（PDF）](https://www.iaru-r3.org/wp-content/uploads/2025/01/R3-004-Band-Plans-IARU-Region-3.pdf) |
 
 参考：[IARU Regions](https://www.iaru.org/about-us/organisation-and-history/regions/)。
 
@@ -108,7 +108,7 @@ VHF以上では通常、地表からの見通し・地形・アンテナ高な�
 
 特に米国で一般的な147 MHz台のFM通信や、米国式420～450 MHz帯の運用を、ほかのRegionの局にそのまま当てはめるのは危険です。
 
-## Region 3：東・南・東南アジア、オセアニア、太平洋
+## Region 3：日本・東・南・東南アジア、オセアニア、太平洋
 
 [IARU Region 3の2024年改訂バンドプラン](https://www.iaru-r3.org/wp-content/uploads/2025/01/R3-004-Band-Plans-IARU-Region-3.pdf)では、従来の表から**7.2～7.3 MHzおよび440～450 MHzを地域共通の分配として見せない**よう整理しています。文書の説明によれば、後者はITU脚注5.270に基づき、Region 3ではオーストラリアとフィリピンの追加分配という事情があります。一方で、国内法でさらに広い帯域を認めている場合もあります。**地域プランの空欄は、すべての国で禁止という意味ではありません。**
 
