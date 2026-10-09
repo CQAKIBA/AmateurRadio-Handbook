@@ -117,12 +117,12 @@ VHF以上では通常、見通し・地形・アンテナ高の影響が大き�
 
 | 国・地域 | 資料 | 主な特徴・注意点 |
 | --- | --- | --- |
-| Region 3共通の目安 | [IARU Region 3](https://www.iaru-r3.org/on-the-air/band-plans/)／[2024年改訂PDF](https://www.iaru-r3.org/wp-content/uploads/2025/01/R3-004-Band-Plans-IARU-Region-3.pdf) | 国内差を吸収しない地域共通の推奨事項。 |
-| **日本** | [JARLアマチュアバンドプラン](https://www.jarl.org/Japanese/A_Shiryo/A-3_Band_Plan/A-3-0.htm) | 総務省の周波数使用区別の告示を基礎に整理した資料。144～146 MHz、430～440 MHzなど、他国との差に注意。 |
-| **韓国** | [KARL Band Plan in Korea（2018年公開）](https://karl.or.kr/bbs/board.php?bo_table=info&wr_id=15)／[KARL資料室](https://www.karl.or.kr/bbs/board.php?bo_table=06_02&page=1) | 144～146 MHz、430～440 MHzなど日本に近い部分があるが、呼出周波数・チャネル間隔・国内規則は同じとは限らない。2018年資料だけで最新制度を確定しない。 |
-| **オーストラリア** | [ACMA Spectrum Plan](https://www.acma.gov.au/australian-radiofrequency-spectrum-plan)／[ACMA Amateur Class Licence](https://www.acma.gov.au/amateur-class-licence)／[WIA Band Plans（2026年改訂）](https://www.wia.org.au/members/bandplans/data/) | Region 3内でも144～148 MHzや7.0～7.3 MHzなどが使われる例。法令と連盟の推奨プランを区別する。 |
-| **ニュージーランド** | [NZART Band Plans（2026年更新）](https://nzart.org.nz/info/band-plans/) | Region 3を基本に国内向け調整を加えた資料。主管庁の使用条件も別途確認する。 |
-| **インド** | [ARSI：無線制度・周波数分配資料](https://arsi.info/important-wpc-documents/) | 国内の無線行政（WPC）・2024年のアマチュア業務規則などへの入口。Region 3の表をそのまま免許表にしない。 |
+| Region 3共通の目安 | [IARU Region 3](https://www.iaru-r3.org/on-the-air/band-plans/)／[2024年改訂PDF](https://www.iaru-r3.org/wp-content/uploads/2025/01/R3-004-Band-Plans-IARU-Region-3.pdf) | 地域の推奨バンドプラン。実際に許可される帯域や運用条件には、国による違いがある。 |
+| **日本** | [JARLアマチュアバンドプラン](https://www.jarl.org/Japanese/A_Shiryo/A-3_Band_Plan/A-3-0.htm) | 144～146 MHz、430～440 MHzなどを使用。JARLのバンドプランには、総務省の周波数使用区別を反映した区分と用途限定の注記がある。 |
+| **韓国** | [KARL Band Plan in Korea（2018年公開）](https://karl.or.kr/bbs/board.php?bo_table=info&wr_id=15)／[KARL資料室](https://www.karl.or.kr/bbs/board.php?bo_table=06_02&page=1) | 144～146 MHz、430～440 MHzなど日本と重なる帯域があるが、呼出周波数やチャネル間隔などは異なる場合がある。リンク先には2018年の資料も含まれる。 |
+| **オーストラリア** | [ACMA Spectrum Plan](https://www.acma.gov.au/australian-radiofrequency-spectrum-plan)／[ACMA Amateur Class Licence](https://www.acma.gov.au/amateur-class-licence)／[WIA Band Plans（2026年改訂）](https://www.wia.org.au/members/bandplans/data/) | 同じRegion 3でも144～148 MHzや7.0～7.3 MHzなど、日本より広い範囲が使われる例。ACMAの免許条件とWIAの推奨バンドプランは別のもの。 |
+| **ニュージーランド** | [NZART Band Plans（2026年更新）](https://nzart.org.nz/info/band-plans/) | Region 3の運用慣行にニュージーランド国内向けの調整を加えたバンドプランがある。送信条件は現地主管庁が定める。 |
+| **インド** | [ARSI：無線制度・周波数分配資料](https://arsi.info/important-wpc-documents/) | 国内の無線行政（WPC）や2024年のアマチュア業務規則によって使用条件が定められる。ARSIの資料ページには関連文書がまとまっている。 |
 | **中国本土、香港、マカオ、台湾、東南アジア、太平洋の各国・地域** | [IARU加盟団体一覧](https://www.iaru.org/reference/member-societies/)／[ITU Radio Regulations](https://www.itu.int/pub/R-REG-RR-2024/) | 同じRegionでも管轄の主管庁、制度、免許手続、利用可能帯域は異なる。行政機関によって周波数・免許・使用条件が異なる。 |
 
 
