@@ -71,7 +71,7 @@
 - HF・VHF・UHF・SHFとは
 - 1.8MHz帯
 - 3.5MHz帯
-- 7MHz帯
+- [7MHz帯（40mバンド）](02_無線の基礎/7MHz帯.md)
 - 10MHz帯
 - 14MHz帯
 - 18MHz帯
