@@ -101,7 +101,7 @@ VHF以上では通常、見通し・地形・アンテナ高の影響が大き�
 
 [IARU Region 2のバンドプラン](https://www.iaru-r2.org/en/reference/band-plans/)が共通の運用目安です。144～148 MHzなどが広く使われ、地域によっては220 MHz帯や420 MHz帯付近でもRegion 1・3との違いが大きくなります。
 
-| 国・グループ | 確認先 | 読み方 |
+| 国・地域 | 資料 | 主な特徴・注意点 |
 | --- | --- | --- |
 | Region 2共通の目安 | [IARU Region 2](https://www.iaru-r2.org/en/reference/band-plans/) | 地域内の運用慣行を調べる入口。国ごとの使用権限を保証しない。 |
 | **米国** | [ARRL Frequency Allocations](https://www.arrl.org/frequency-allocations)／[ARRL Band Plan](https://www.arrl.org/band-plan)／[FCC規則（eCFR, Part 97）](https://www.ecfr.gov/current/title-47/chapter-I/subchapter-D/part-97) | 144～148 MHz、420～450 MHz、222～225 MHzなどが特徴的。免許クラス、用途、場所に応じた制限を必ず確認する。 |
@@ -115,7 +115,7 @@ VHF以上では通常、見通し・地形・アンテナ高の影響が大き�
 
 [IARU Region 3の2024年改訂バンドプラン](https://www.iaru-r3.org/wp-content/uploads/2025/01/R3-004-Band-Plans-IARU-Region-3.pdf)では、従来の表から**7.2～7.3 MHzおよび440～450 MHzを地域共通の分配として見せない**よう整理しています。文書の説明によれば、後者はITU脚注5.270に基づき、Region 3ではオーストラリアとフィリピンの追加分配という事情があります。一方で、国内法でさらに広い帯域を認めている場合もあります。**地域プランの空欄は、すべての国で禁止という意味ではありません。**
 
-| 国・グループ | 確認先 | 読み方 |
+| 国・地域 | 資料 | 主な特徴・注意点 |
 | --- | --- | --- |
 | Region 3共通の目安 | [IARU Region 3](https://www.iaru-r3.org/on-the-air/band-plans/)／[2024年改訂PDF](https://www.iaru-r3.org/wp-content/uploads/2025/01/R3-004-Band-Plans-IARU-Region-3.pdf) | 国内差を吸収しない地域共通の推奨事項。 |
 | **日本** | [JARLアマチュアバンドプラン](https://www.jarl.org/Japanese/A_Shiryo/A-3_Band_Plan/A-3-0.htm) | 総務省の周波数使用区別の告示を基礎に整理した資料。144～146 MHz、430～440 MHzなど、他国との差に注意。 |
@@ -123,7 +123,7 @@ VHF以上では通常、見通し・地形・アンテナ高の影響が大き�
 | **オーストラリア** | [ACMA Spectrum Plan](https://www.acma.gov.au/australian-radiofrequency-spectrum-plan)／[ACMA Amateur Class Licence](https://www.acma.gov.au/amateur-class-licence)／[WIA Band Plans（2026年改訂）](https://www.wia.org.au/members/bandplans/data/) | Region 3内でも144～148 MHzや7.0～7.3 MHzなどが使われる例。法令と連盟の推奨プランを区別する。 |
 | **ニュージーランド** | [NZART Band Plans（2026年更新）](https://nzart.org.nz/info/band-plans/) | Region 3を基本に国内向け調整を加えた資料。主管庁の使用条件も別途確認する。 |
 | **インド** | [ARSI：無線制度・周波数分配資料](https://arsi.info/important-wpc-documents/) | 国内の無線行政（WPC）・2024年のアマチュア業務規則などへの入口。Region 3の表をそのまま免許表にしない。 |
-| **中国本土、香港、マカオ、台湾、東南アジア、太平洋の各国・地域** | [IARU加盟団体一覧](https://www.iaru.org/reference/member-societies/)／[ITU Radio Regulations](https://www.itu.int/pub/R-REG-RR-2024/) | 同じRegionでも管轄の主管庁、制度、免許手続、利用可能帯域は異なる。公的資料を確認できた場合に個別リンクを追加する。 |
+| **中国本土、香港、マカオ、台湾、東南アジア、太平洋の各国・地域** | [IARU加盟団体一覧](https://www.iaru.org/reference/member-societies/)／[ITU Radio Regulations](https://www.itu.int/pub/R-REG-RR-2024/) | 同じRegionでも管轄の主管庁、制度、免許手続、利用可能帯域は異なる。行政機関によって周波数・免許・使用条件が異なる。 |
 
 
 ## アマチュア衛星業務：Regionとは別に見る
