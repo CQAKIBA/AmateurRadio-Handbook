@@ -126,3 +126,129 @@
   white-space: nowrap !important;
   word-break: keep-all !important;
 }
+
+/* Image galleries rendered by gallery(height, file1, file2, ...). */
+.md-typeset .ham-image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 8px;
+  margin: 0.8em 0;
+}
+
+.md-typeset .ham-image-gallery a {
+  display: inline-block;
+  max-width: 100%;
+  line-height: 0;
+}
+
+.md-typeset .ham-image-gallery img {
+  display: block;
+  height: var(--gallery-height, 120px);
+  width: auto;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+/* Gallery images expand in a native dialog; no external lightbox library. */
+.md-typeset .ham-image-gallery a {
+  cursor: zoom-in;
+}
+
+.ham-lightbox {
+  max-width: calc(100vw - 20px);
+  max-height: calc(100vh - 20px);
+  padding: 0;
+  overflow: visible;
+  border: 0;
+  background: transparent;
+  color: #fff;
+}
+
+.ham-lightbox::backdrop {
+  background: rgba(0, 0, 0, 0.88);
+}
+
+.ham-lightbox__panel {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.6rem;
+  padding-top: 1.6rem;
+}
+
+.ham-lightbox__frame {
+  position: relative;
+  min-width: 0;
+}
+
+.ham-lightbox__image {
+  display: block;
+  width: auto;
+  height: auto;
+  max-width: calc(100vw - 48px);
+  max-height: calc(100vh - 130px);
+  max-height: calc(100dvh - 130px);
+  object-fit: contain;
+}
+
+.ham-lightbox__caption {
+  max-width: calc(100vw - 48px);
+  margin: 0;
+  padding: 0 0.4rem;
+  text-align: center;
+  overflow-wrap: anywhere;
+  font-size: 0.8rem;
+}
+
+.ham-lightbox button {
+  display: grid;
+  place-items: center;
+  width: 2.6rem;
+  height: 2.6rem;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: rgba(30, 30, 30, 0.8);
+  color: #fff;
+  font: inherit;
+  font-size: 2rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.ham-lightbox button:hover {
+  background: rgba(75, 75, 75, 0.95);
+}
+
+.ham-lightbox button:focus-visible {
+  outline: 3px solid #83cfff;
+  outline-offset: 3px;
+}
+
+.ham-lightbox button[hidden] {
+  display: none;
+}
+
+.ham-lightbox__close {
+  position: absolute;
+  top: -0.9rem;
+  right: 0;
+  z-index: 1;
+}
+
+.ham-lightbox__previous,
+.ham-lightbox__next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.ham-lightbox__previous {
+  left: 0.3rem;
+}
+
+.ham-lightbox__next {
+  right: 0.3rem;
+}
