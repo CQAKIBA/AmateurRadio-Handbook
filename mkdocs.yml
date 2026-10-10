@@ -58,4 +58,4 @@ extra_css:
 extra_javascript:
   - https://cdn.jsdelivr.net/npm/mermaid@12.1.0/dist/mermaid.min.js
   - javascripts/mermaid-init.js
-  - javascripts/ham-gallery.js
+  - javascripts/js-img-gallery.js
