@@ -8,22 +8,28 @@
  *
  * <div class="js-img-gallery" data-path="images_ham_contents" data-height="120"
  *      data-caption="Common caption">
- *   <span data-img="image1.png"></span>
- *   <span data-img="image2.png" data-caption="Override for image 2"></span>
- *   <span data-img="image3.png" data-caption=""></span>
+ *   <div>image1.png</div>
+ *   <div>image2.png Caption for this image (overrides common caption)</div>
+ *   <div>image3.png</div>
  * </div>
  *
- * data-path: folder for this gallery. Relative paths are based on the
+ * Each child <div> contains a filename and an optional caption, separated
+ * by the FIRST whitespace. Filenames must not contain whitespace or paths.
+ * GitHub's Markdown preview displays each child div as a separate text line;
+ * with JavaScript enabled the contents become a horizontal image gallery.
+ *
+ * data-path: folder shared by this gallery. Relative paths are based on the
  *   article's source-directory equivalent in MkDocs (pretty URLs and .html).
  *   Leading / means the site origin's root; https:// URLs also work.
- *   Default: images_ham_contents. Do not put folders in data-img.
+ *   Default: images_ham_contents.
  * data-height: image height in pixels, optional (default 120, range 24–600).
- * data-caption: optional fallback from the outer div. Each image can
- *   override it. data-caption="" on a span suppresses the fallback.
+ * data-caption: optional common caption on the outer div. A child's caption
+ *   after the filename overrides it. Optionally use data-caption="" on a
+ *   child div to suppress the common caption for that image.
  *
  * Click to zoom; left/right arrows switch images; Esc or backdrop closes.
  * With Ctrl/Command-click, the image link opens normally in a new tab.
- * GitHub Markdown previews do not execute JS, so no gallery renders there.
+ * GitHub previews show the original filename/caption lines, not images.
  */
 (() => {
   "use strict";
@@ -145,18 +151,21 @@
     const folder = imageFolder(gallery);
     if (!folder) return;
 
-    const children = Array.from(gallery.querySelectorAll(":scope > [data-img]"));
+    const children = Array.from(gallery.querySelectorAll(":scope > div"));
     if (!children.length) return;
 
     const commonCaption = gallery.dataset.caption ?? "";
     const links = [];
 
     children.forEach((entry, i) => {
-      const file = (entry.dataset.img || "").trim();
+      // Split only at the first whitespace; captions may contain spaces.
+      const match = entry.textContent.trim().match(/^(\S+)(?:\s+([\s\S]*))?$/u);
+      if (!match) return;
+      const file = match[1];
       // The directory belongs in data-path, never in an individual filename.
-      if (!file || file === "." || file === ".." || /[/\\]/.test(file)) return;
+      if (file === "." || file === ".." || /[/\\]/.test(file)) return;
       const src = new URL(encodeURIComponent(file), folder).href;
-      const caption = entry.dataset.caption ?? commonCaption;
+      const caption = entry.dataset.caption ?? match[2] ?? commonCaption;
 
       const anchor = document.createElement("a");
       anchor.href = src;
