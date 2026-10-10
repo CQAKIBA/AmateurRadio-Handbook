@@ -1,6 +1,11 @@
 /*
  * js-img-gallery.js — image gallery + instant lightbox, no dependencies.
  *
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
+ * Copyright (c) 2026 Daisuke JA1UMW / CQAKIBA.TOKYO
+ * Released under the MIT License.
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
+ *
  * Place this script on an HTML page (with defer), or add its path to
  * MkDocs' extra_javascript list. It installs its own CSS once.
  *
