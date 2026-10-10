@@ -8,6 +8,10 @@
 
 特に初心者が、経験談・伝聞・昔からの常識・極端な成功例を、そのまま一般的な事実として受け取ってしまわないよう、**条件・測定・再現性・一次資料を重視した説明**を目指します。
 
+!!! Question "装飾記法については"
+
+    [Material for MkDocs Reference](https://squidfunk.github.io/mkdocs-material/reference/)
+
 > 現在は仮目次です。章立て・記事名・分類は、記事を書きながら随時変更します。
 
 ## はじめに
