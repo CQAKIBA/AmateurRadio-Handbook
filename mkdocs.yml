@@ -28,6 +28,8 @@ nav:
       - 日本のアマチュア無線のはじまり: 15_歴史/日本のアマチュア無線のはじまり.md
       - アマチュア無線と通信技術の歴史: 15_歴史/history.md
       - アマチュア無線が登場する作品: 15_歴史/アマチュア無線が登場する作品.md
+  - 制作ツール:
+      - バンドグラフ: tools/bandgraph.md
   - このプロジェクト:
       - このプロジェクトについて: about.md
       - GitHubで編集する: github.md
@@ -65,3 +67,4 @@ extra_javascript:
   - javascripts/mermaid-init.js
   - javascripts/js-img-gallery.js
   - javascripts/bandgraph.js
+  - javascripts/bandgraph-playground.js
