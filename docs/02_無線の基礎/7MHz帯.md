@@ -208,9 +208,10 @@ PLCだけでなく、LED照明、ACアダプター、PC電源、充電器、太�
 ### 2001年（平成13年）12月18日施行
 
 <div class="js-bandgraph" data-title="7MHz帯" data-unit="MHz">
-7.000 7.030 turquoise CW
-7.025 7.030 skyblue 狭帯域データ
-7.045 7.100 violet CW,AM系(電話・画像)
+7.000 7.025 turquoise CW | y=0:2
+7.025 7.030 turquoise CW | y=1:2
+7.025 7.030 skyblue 狭帯域デジタル | y=0:1
+7.030 7.100 violet CW,AM系(電話・画像) | y=0:2
 @note ※7.050MHz（±5kHz） 非常通信周波数
 @note https://web.archive.org/web/20020223141832/http://www.jarl.or.jp/Japanese/A_Shiryo/A-3_Band_Plan/A-3-0.htm
 </div>
@@ -218,10 +219,11 @@ PLCだけでなく、LED照明、ACアダプター、PC電源、充電器、太�
 ### 2015年（平成27年）1月5日施行
 
 <div class="js-bandgraph" data-title="7MHz帯" data-unit="MHz">
-7.000 7.045 turquoise CW
-7.030 7.045 skyblue 狭帯域データ
-7.045 7.100 violet CW\n狭帯域の電話・画像
-7.100 7.200 sandybrown 狭帯域の全電波型式
+7.000 7.030 turquoise CW | y=0:2
+7.030 7.045 turquoise CW | y=1:2
+7.030 7.045 skyblue 狭帯域データ | y=0:1
+7.045 7.100 violet CW\n狭帯域の電話・画像 | y=0:2
+7.100 7.200 sandybrown 狭帯域の全電波型式 | y=0:2
 @note ※7.050MHz 非常通信周波数
 @note ※7.045MHz から7.100MHz までの周波数は，外国のアマチュア局とのデータ通信に使用することができる。
 </div>
@@ -229,10 +231,11 @@ PLCだけでなく、LED照明、ACアダプター、PC電源、充電器、太�
 ### 2020年（令和2年）4月21日施行
 
 <div class="js-bandgraph" data-title="7MHz帯" data-unit="MHz">
-7.000 7.045 turquoise CW
-7.030 7.045 skyblue 狭帯域データ
-7.045 7.100 violet CW\n狭帯域の電話・画像
-7.100 7.200 sandybrown 狭帯域の全電波型式
+7.000 7.030 turquoise CW | y=0:2
+7.030 7.045 turquoise CW | y=1:2
+7.030 7.045 skyblue 狭帯域データ | y=0:1
+7.045 7.100 violet CW\n狭帯域の電話・画像 | y=0:2
+7.100 7.200 sandybrown 狭帯域の全電波型式 | y=0:2
 @note ※7.050MHz 非常通信周波数
 @note ※7.045MHz から7.100MHz までの周波数は，外国のアマチュア局とのデータ通信に使用することができる。
 </div>
