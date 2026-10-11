@@ -52,6 +52,11 @@ markdown_extensions:
   - md_in_html
   - admonition
 
+extra:
+  analytics:
+    provider: google
+    property: G-01FZ329ZZ9
+
 extra_css:
   - stylesheets/extra.css
 
