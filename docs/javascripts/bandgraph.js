@@ -52,7 +52,7 @@
  * 【表示属性】
  *   data-unit="MHz"        周波数単位（初期値 MHz）
  *   data-title="144MHz帯"  タイトル
- *   data-compression="0.9" 0=線形、1=対数のみ（初期値 0.9）
+ *   data-compression="0.5" 0=線形、1=対数のみ（初期値 0.5）
  *   data-max-lines="3"    折り返し行数の目安
  *   data-font-size="13"   ラベルの文字サイズ（px）
  *   data-track-height="26" 1段の高さ（px）
@@ -403,7 +403,7 @@
     const rowHeight = clamp(Number(host.dataset.trackHeight) || (explicitSubrows ? 26 : 51), 18, 100);
     const maxLines = clamp(Number(host.dataset.maxLines) || 3, 1, 10);
     const fontSize = clamp(Number(host.dataset.fontSize) || 13, 9, 22);
-    const compression = clamp(Number(host.dataset.compression ?? .9), 0, 1);
+    const compression = clamp(Number(host.dataset.compression ?? .5), 0, 1);
     // clientWidth rounds fractional CSS pixels. Never round the desired chart
     // width UP: doing so can create an unwanted 1px horizontal scrollbar.
     const bounds = host.getBoundingClientRect();
