@@ -1,11 +1,8 @@
 /*
  * BandGraph — アマチュア無線バンドプラン・周波数区間グラフ
  *
- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
  * Copyright (c) 2026 Daisuke JA1UMW / CQAKIBA.TOKYO
  * Released under the MIT License.
- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
- *
  * --------------------------------------------------------
  * 周波数の「開始 終了 内容」を、そのまま色分け帯域図に変換します。
  * 周波数幅を対数圧縮し、セル内文字が収まるよう列幅を再配分します。
@@ -13,13 +10,13 @@
  *
  * 【最短の使い方：このままHTMLにコピー】
  *
-    <div class="js-bandgraph" data-title="50MHz帯" data-unit="MHz">
-    50.00 50.07 CW
-    50.07 51.00 #f9cda7 狭帯域の全電波形式
-    50.00 50.30 #77b596 EME
-    51.00 54.00 全電波形式
-    </div>
-    <script defer src="bandgraph.js"></script>
+ *   <div class="js-bandgraph" data-title="50MHz帯" data-unit="MHz">
+ *   50.00 50.07 CW
+ *   50.07 51.00 #f9cda7 狭帯域の全電波形式
+ *   50.00 50.30 #77b596 EME
+ *   51.00 54.00 全電波形式
+ *   </div>
+ *   <script defer src="bandgraph.js"></script>
  *
  * このファイルを bandgraph.js として設置し、HTMLの最後にscriptタグを
  * 追加すれば自動描画されます。CSSはJS自身がページに埋め込みます。
@@ -407,7 +404,17 @@
     const maxLines = clamp(Number(host.dataset.maxLines) || 3, 1, 10);
     const fontSize = clamp(Number(host.dataset.fontSize) || 13, 9, 22);
     const compression = clamp(Number(host.dataset.compression ?? .9), 0, 1);
-    const target = Math.max(250, host.clientWidth || 720);
+    // clientWidth rounds fractional CSS pixels. Never round the desired chart
+    // width UP: doing so can create an unwanted 1px horizontal scrollbar.
+    const bounds = host.getBoundingClientRect();
+    const css = getComputedStyle(host);
+    const horizontalInsets = [css.paddingLeft, css.paddingRight,
+      css.borderLeftWidth, css.borderRightWidth]
+      .reduce((sum, px) => sum + (parseFloat(px) || 0), 0);
+    const availableWidth = bounds.width
+      ? bounds.width - horizontalInsets
+      : (host.clientWidth || 720);
+    const target = Math.max(250, Math.floor(availableWidth));
     const low = boundaries[0].value, high = boundaries[boundaries.length - 1].value;
     const splitPoints = [low, ...breaks, high];
     const sections = splitPoints.slice(1).map((end, index) => {
@@ -472,7 +479,9 @@
         tickEl.style.top = `${3 + tick.tier * 17}px`;
         axis.append(tickEl);
         const line = make('span', 'bandgraph__tickline');
-        line.style.left = `${tick.x}px`;
+        // The end tick lies at x=width; a 1px line placed there
+        // would stick out to width+1 and trigger horizontal overflow.
+        line.style.left = `${Math.min(tick.x, width - 1)}px`;
         axis.append(line);
       }
       const plot = make('div', 'bandgraph__plot');
