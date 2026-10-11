@@ -1,5 +1,11 @@
 /*
  * BandGraph — アマチュア無線バンドプラン・周波数区間グラフ
+ *
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
+ * Copyright (c) 2026 Daisuke JA1UMW / CQAKIBA.TOKYO
+ * Released under the MIT License.
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
+ *
  * --------------------------------------------------------
  * 周波数の「開始 終了 内容」を、そのまま色分け帯域図に変換します。
  * 周波数幅を対数圧縮し、セル内文字が収まるよう列幅を再配分します。
@@ -7,13 +13,13 @@
  *
  * 【最短の使い方：このままHTMLにコピー】
  *
- *   <div class="js-bandgraph" data-title="50MHz帯" data-unit="MHz">
- *   50.00 50.07 CW
- *   50.07 51.00 #f9cda7 狭帯域の全電波形式
- *   50.00 50.30 #77b596 EME
- *   51.00 54.00 全電波形式
- *   </div>
- *   <script defer src="bandgraph.js"></script>
+    <div class="js-bandgraph" data-title="50MHz帯" data-unit="MHz">
+    50.00 50.07 CW
+    50.07 51.00 #f9cda7 狭帯域の全電波形式
+    50.00 50.30 #77b596 EME
+    51.00 54.00 全電波形式
+    </div>
+    <script defer src="bandgraph.js"></script>
  *
  * このファイルを bandgraph.js として設置し、HTMLの最後にscriptタグを
  * 追加すれば自動描画されます。CSSはJS自身がページに埋め込みます。
