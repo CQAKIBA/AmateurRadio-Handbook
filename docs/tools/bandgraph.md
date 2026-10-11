@@ -1,6 +1,16 @@
 # バンドグラフ
 
-周波数ごとの使用区別や用途を、色分けした帯域図として表示するツールです。周波数の長さをもとに横幅を決めながら、文字が読める幅も確保します。図の途中で折り返したり、同じ周波数区間を上下に分けて表示したりできます。
+**周波数を記述する。帯域が、図になる。**
+
+周波数ごとの使用区別や用途を、色分けした帯域図として表示するツールです。  
+**アマチュア無線のバンドプラン図をいい感じに自動生成するプログラムです。**
+
+周波数軸を対数圧縮する事で、実際の幅の大小関係をなるべく保ちつつ、見やすいレイアウトを自動計算するアルゴリズムとして作成しました。周波数区間と用途を記述するだけで、区分の密度や文字量、重複した用途まで考慮して描画します。
+
+**[bandgraph.js — JavaScript本体](../../javascripts/bandgraph.js)** · [GitHubでソースコードを見る](https://github.com/CQAKIBA/AmateurRadio-Handbook/blob/main/docs/javascripts/bandgraph.js)
+
+<small>Copyright (c) 2026 Daisuke JA1UMW / CQAKIBA.TOKYO  
+Released under the MIT License.</small>
 
 ## ブラウザで試す
 
