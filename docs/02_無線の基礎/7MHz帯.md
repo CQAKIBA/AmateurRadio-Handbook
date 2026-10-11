@@ -201,6 +201,59 @@ PLCだけでなく、LED照明、ACアダプター、PC電源、充電器、太�
 | **コンテストで急に混雑した** | 開催日・規約を確認し、空いた区間や別の時間を選ぶ。慣れない人は受信で交信手順を学ぶこともできる |
 | **知らない方式の信号ばかり聞こえる** | SDRのウォーターフォールや音声サンプルからモードを調べる。信号が聞こえるだけでその方式の常時活動は保証されない |
 
+## 過去のバンドプラン（JARL発表版）
+
+慣例的な使い方をの歴史を追うための資料
+
+### 2001年（平成13年）12月18日施行
+
+<div class="js-bandgraph" data-title="7MHz帯" data-unit="MHz">
+7.000 7.030 turquoise CW
+7.025 7.030 skyblue 狭帯域データ
+7.045 7.100 violet CW,AM系(電話・画像)
+@note ※7.050MHz（±5kHz） 非常通信周波数
+@note https://web.archive.org/web/20020223141832/http://www.jarl.or.jp/Japanese/A_Shiryo/A-3_Band_Plan/A-3-0.htm
+</div>
+
+### 2015年（平成27年）1月5日施行
+
+<div class="js-bandgraph" data-title="7MHz帯" data-unit="MHz">
+7.000 7.045 turquoise CW
+7.030 7.045 skyblue 狭帯域データ
+7.045 7.100 violet CW\n狭帯域の電話・画像
+7.100 7.200 sandybrown 狭帯域の全電波型式
+@note ※7.050MHz 非常通信周波数
+@note ※7.045MHz から7.100MHz までの周波数は，外国のアマチュア局とのデータ通信に使用することができる。
+</div>
+
+### 2020年（令和2年）4月21日施行
+
+<div class="js-bandgraph" data-title="7MHz帯" data-unit="MHz">
+7.000 7.045 turquoise CW
+7.030 7.045 skyblue 狭帯域データ
+7.045 7.100 violet CW\n狭帯域の電話・画像
+7.100 7.200 sandybrown 狭帯域の全電波型式
+@note ※7.050MHz 非常通信周波数
+@note ※7.045MHz から7.100MHz までの周波数は，外国のアマチュア局とのデータ通信に使用することができる。
+</div>
+
+### 2023年（令和5年）9月25日施行
+
+<div class="js-bandgraph" data-title="7MHz帯" data-unit="MHz">
+7.000 7.030 turquoise CW
+7.030 7.200 sandybrown 狭帯域の全電波型式
+@note ※7.050MHz 非常通信周波数
+</div>
+
+### 2025年（令和7年）7月17日施行
+
+<div class="js-bandgraph" data-title="7MHz帯" data-unit="MHz">
+7.000 7.030 turquoise CW
+7.030 7.200 sandybrown 狭帯域の全電波型式
+@note ※ 7.050MHz 非常通信周波数（非常事態・災害等発生時は変調帯域幅を考慮して十分な幅を静寂にしてください）
+</div>
+
+
 ## 参考資料・運用記録
 
 ### 規則・技術資料
