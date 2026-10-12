@@ -441,3 +441,32 @@
 - NHK ラジオ放送再編案内  
   https://saiho.nhk.or.jp/
 
+<script>
+// リスト行カラーマーカー処理
+// 色の追加はextra.css側で先に色定義を作成する
+(() => {
+  const colors = {
+    "アマチュア無線": "magenta",
+    "技術": "blue",
+    "放送": "orange",
+    "携帯電話": "green",
+    "インターネット": "cyan",
+    "衛星": "purple"
+  };
+
+  document.querySelectorAll(".md-content li").forEach(li => {
+    const strong = li.querySelector(":scope > strong");
+    if (!strong) return;
+
+    const match = strong.textContent.match(/\[([^\]]+)\]\s*$/);
+    if (!match) return;
+
+    const category = match[1].split("・")[0];
+    const color = colors[category];
+
+    if (color) {
+      li.classList.add("marker", "history-category", color);
+    }
+  });
+})();
+</script>
