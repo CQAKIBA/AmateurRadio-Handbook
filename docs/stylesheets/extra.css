@@ -117,3 +117,25 @@
   white-space: nowrap;
   border-bottom: 1px solid #9ecae1;
 }
+
+/* カラーマーカー、ボックス */
+div, span, p, ul, li {
+  &.marker {
+    background-color: color-mix(in srgb, var(--color, #000000) 20%, transparent);
+  }
+  &.box {
+    border-radius: 10px;
+    padding: 2px;
+    background-color: color-mix(in srgb, var(--color, #000000) 15%, transparent);
+    border: 1px solid color-mix(in srgb, var(--color, #000000) 30%, transparent);
+  }
+  &.red    { --color: #ff0000; }
+  &.green  { --color: #00ff00; }
+  &.blue   { --color: #0000ff; }
+  &.magenta{ --color: #ff00ff; }
+  &.yellow { --color: #ffff00; }
+  &.cyan   { --color: #00ffff; }
+  &.orange { --color: #ffa500; }
+  &.purple { --color: #800080; }
+  &.gray   { --color: #808080; }
+}
