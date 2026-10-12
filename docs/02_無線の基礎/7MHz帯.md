@@ -207,7 +207,7 @@ PLCだけでなく、LED照明、ACアダプター、PC電源、充電器、太�
 
 ### 2001年（平成13年）12月18日施行
 
-<div class="js-bandgraph" data-title="7MHz帯" data-unit="MHz">
+<div class="js-bandgraph" data-title="7MHz帯（2001年（平成13年）12月18日施行）" data-unit="MHz">
 7.000 7.025 turquoise CW | y=0:2
 7.025 7.030 turquoise CW | y=1:2
 7.025 7.030 skyblue 狭帯域デジタル | y=0:1
@@ -215,10 +215,12 @@ PLCだけでなく、LED照明、ACアダプター、PC電源、充電器、太�
 @note ※7.050MHz（±5kHz） 非常通信周波数
 @note https://web.archive.org/web/20020223141832/http://www.jarl.or.jp/Japanese/A_Shiryo/A-3_Band_Plan/A-3-0.htm
 </div>
+<small>当時の上限は 7.10MHz 。</small>
+<small>当時のJARLバンドプランには非常通信周波数が「帯域幅」で明記されていた事が観察できる。</small>
 
 ### 2015年（平成27年）1月5日施行
 
-<div class="js-bandgraph" data-title="7MHz帯" data-unit="MHz">
+<div class="js-bandgraph" data-title="7MHz帯（2015年（平成27年）1月5日施行）" data-unit="MHz">
 7.000 7.030 turquoise CW | y=0:2
 7.030 7.045 turquoise CW | y=1:2
 7.030 7.045 skyblue 狭帯域データ | y=0:1
@@ -230,7 +232,7 @@ PLCだけでなく、LED照明、ACアダプター、PC電源、充電器、太�
 
 ### 2020年（令和2年）4月21日施行
 
-<div class="js-bandgraph" data-title="7MHz帯" data-unit="MHz">
+<div class="js-bandgraph" data-title="7MHz帯（2020年（令和2年）4月21日施行）" data-unit="MHz">
 7.000 7.030 turquoise CW | y=0:2
 7.030 7.045 turquoise CW | y=1:2
 7.030 7.045 skyblue 狭帯域データ | y=0:1
@@ -250,7 +252,7 @@ PLCだけでなく、LED照明、ACアダプター、PC電源、充電器、太�
 
 ### 2025年（令和7年）7月17日施行
 
-<div class="js-bandgraph" data-title="7MHz帯" data-unit="MHz">
+<div class="js-bandgraph" data-title="7MHz帯（2025年（令和7年）7月17日施行）" data-unit="MHz">
 7.000 7.030 turquoise CW
 7.030 7.200 sandybrown 狭帯域の全電波型式
 @note ※ 7.050MHz 非常通信周波数（非常事態・災害等発生時は変調帯域幅を考慮して十分な幅を静寂にしてください）
