@@ -316,6 +316,7 @@
 
 ### 2005年（平成17年）
 
+- **3～4月 [アマチュア無線]** ARRLの技術誌『QEX』で、WB8WGA Bob Ball氏がPIC16F88マイコンを使う低価格の「PIC-TNC」を発表。専用モデムICを使わずBell 202の1200bit/s AFSKパケット通信を実現する工作で、後のRaspberry Pi Picoによる日本の[PICO TNC](../07_デジタル通信・コンピュータ/AX25パケット.md#日本のマイコン自作tnc--pico-tnc)にも設計思想が受け継がれました。
 - **10月1日 [アマチュア無線]** 第3級アマチュア無線技士のモールス電信実技試験が廃止。第1級・第2級も試験速度が緩和されました。
 
 ### 2007年（平成19年）
@@ -500,6 +501,10 @@
 
 ### パケット通信・RBBS・APRS・ナビトラ
 
+- ARRL『QEX』2005年3・4月号関連ソフトウェア一覧（WB8WGAのPIC-TNC原型）  
+  https://www.arrl.org/files/file/QEX%20Binaries/
+- Raspberry Pi Pico製TNC「PICO TNC」（2026年現在公開される日本のマイコン工作例）  
+  https://github.com/amedes/pico_tnc
 - TAPR「History」（1982年の試作TNC交信と1985年TNC-2発表を含む団体自身の記録）  
   https://tapr.org/history/
 - カナダのパケット無線初期実験に参加した関係者による回顧（1978年5月31日のモントリオール実験）  
