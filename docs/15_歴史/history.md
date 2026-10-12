@@ -139,6 +139,7 @@
 
 ### 1968年（昭和43年）
 
+- **[アマチュア無線]** 米国のFCCが、アマチュアHF帯でのSSTVの通常運用を認可。1950年代から続いた特別許可による実験を経て、音声帯域で静止画像を伝える方式が正式な通信手段となりました。日本で最初の24局が免許されるのは1973年です。
 - **3月 [アマチュア無線]** JA1AKAとJH1DWJが430MHz帯でカラー映像を約1.5km伝送。自作機器によるATV実験が白黒にとどまらずカラーへ進んでいたことを示す記録です。
 - **8月3日 [アマチュア無線]** 富士山頂のJA1AKAが430MHz帯で送信したATV映像を、日本テレビの番組『木島則夫ハプニングショー』で紹介。受信を担当したのはJA1BUZで、アマチュアの画像通信実験が生放送で実演されました。
 - **12月 [アマチュア無線]** 「JARLアマチュア無線ハンドブック」第1版刊行。
@@ -433,6 +434,8 @@
 
 ### 画像通信（ATV・SSTV）の初期史
 
+- ARRL「Dayton Amateur Radio Association Announces 2009 Award Winners」（Copthorne MacdonaldによるSSTV開発と1968年FCC認可を記録）  
+  https://www.arrl.org/news/dayton-amateur-radio-association-announces-2009-award-winners
 - Copthorne Macdonald「A New Narrow-Band Image Transmission System」『QST』1958年8月号（当時の回路・方式を収めた原文スキャン）  
   https://bruxy.regnet.cz/hamradio/SSTV_Library/Magazine_Articles/QST_1958_August_-_Copthorne_Macdonald_W4ZZI,_A_New_Narrow-Band_Image_Transmission_System._Part_I_-_Principles_of_Slow-Scan_Picture_Reproduction.pdf
 - JA9AA 円間毅一氏「テレビ送信機に取り組む(2)」（1964年のATV免許、1965年の国内初交信、1968年の製作・交信）  
