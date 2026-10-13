@@ -29,6 +29,7 @@ nav:
       - APRS（AX.25パケット応用）: 07_デジタル通信・コンピュータ/APRS.md
       - ナビトラ（AX.25パケット応用）: 07_デジタル通信・コンピュータ/ナビトラ.md
       - ナビトラ受信ログアーカイブ: 07_デジタル通信・コンピュータ/ナビトラ受信ログアーカイブ.md
+      - ナビトラ受信ログ検索（2005～2008）: 07_デジタル通信・コンピュータ/ナビトラ受信ログ一覧.md
   - 活動・コミュニティ:
       - クラブ・サークル紹介: clubs/index.md
   - 歴史:
@@ -68,6 +69,7 @@ extra:
 
 extra_css:
   - stylesheets/extra.css
+  - stylesheets/navitra-archive.css
 
 extra_javascript:
   - https://cdn.jsdelivr.net/npm/mermaid@12.1.0/dist/mermaid.min.js
@@ -75,3 +77,4 @@ extra_javascript:
   - javascripts/js-img-gallery.js
   - javascripts/bandgraph.js
   - javascripts/bandgraph-playground.js
+  - javascripts/navitra-archive.js
