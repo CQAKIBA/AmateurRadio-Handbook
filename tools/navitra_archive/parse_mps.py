@@ -6,6 +6,17 @@ Usage: python parse_mps.py 0.mps 1.mps --output-dir out
 For additional old snapshots:
   python parse_mps.py capture-2005.mps --snapshot 2005-02-week --prefix navitra-2005-02 --output-dir out
 
+Alps Mapping's MapServer Script was a proprietary map-overlay interchange
+format documented for ProAtlas and other client-side desktop maps. It is
+unrelated to the open-source MapServer (UMN/OSGeo) software.
+Historical references:
+  https://web.archive.org/web/20080524205732/http://www.alpsmap.co.jp/mapserv/
+  https://www.pitecan.com/UnixMagazine/PDF/if9903.pdf
+
+This parser only supports the documented subset observed in two gps-packet.net
+MPS version 1.0 files (hierarchical group/point information). It is not a
+general-purpose implementation of all MapServer Script versions or commands.
+
 No latitude, longitude, tracking URL, or other point location is emitted.
 Retention of callsigns and old messages is intended for historical study.
 Redactions affect contact details only, not technical @ notation or domains.
