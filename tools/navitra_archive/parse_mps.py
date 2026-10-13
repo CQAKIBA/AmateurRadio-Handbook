@@ -1,7 +1,10 @@
 #!/usr/bin/env python3
 """Convert old gps-packet.net mapserver 1.0 MPS snapshots into history CSVs.
 
-Usage: python navitra_archive_parser.py 0.mps 1.mps --output-dir out
+Usage: python parse_mps.py 0.mps 1.mps --output-dir out
+
+For additional old snapshots:
+  python parse_mps.py capture-2005.mps --snapshot 2005-02-week --prefix navitra-2005-02 --output-dir out
 
 No latitude, longitude, tracking URL, or other point location is emitted.
 Retention of callsigns and old messages is intended for historical study.
@@ -27,6 +30,10 @@ EMAIL_RE = re.compile(r'(?<![\w@])(?:[A-Za-z0-9.!#$%&\'*+/=?^_`{|}~-]+)@[A-Za-z0
 PHONE_RE = re.compile(r'(?<![0-9])(?:0[1-9]0[-ー −]?\d{4}[-ー −]?\d{4}|0\d{1,4}-\d{1,4}-\d{3,4})(?![0-9])')
 # Detailed residential street/block numbers, not broad city/neighborhood text.
 ADDRESS_RE = re.compile(r'\d+(?:丁目|番地|番|号)(?:\d+号)?|\d{1,4}[-−]\d{1,4}[-−]\d{1,4}')
+KNOWN_SNAPSHOTS = {
+    "affc5c20b39243157e507493da244056d864e805d62524b4ad7c572f5bd9e781": "2007-07-18-week",
+    "ac65ea66e9ed8181a17a918172a856f7406a89013bcffa6d766af28598028886": "2008-05-10-realtime",
+}
 REPLACEMENTS = (
     ('email', EMAIL_RE, '[メールアドレスのため掲載省略]'),
     ('phone', PHONE_RE, '[電話番号のため掲載省略]'),
@@ -112,23 +119,28 @@ def main():
     ap=argparse.ArgumentParser(description=__doc__)
     ap.add_argument('mps',nargs='+',help='Old gps-packet.net *.mps file(s)')
     ap.add_argument('--output-dir',default='.',help='Destination for two CSV files')
+    ap.add_argument('--snapshot',action='append',help='Explicit label for each input, supplied in file order')
+    ap.add_argument('--prefix',default='navitra-gps-packet-2007-2008',help='Output filename prefix')
     opts=ap.parse_args()
+    if opts.snapshot and len(opts.snapshot) != len(opts.mps):
+        ap.error('Supply exactly one --snapshot label for each *.mps input')
     records=[]
     hashes={}
-    for source in opts.mps:
+    for i,source in enumerate(opts.mps):
         filename=Path(source).name
-        if filename=='0.mps':snap='2007-07-18-week'
-        elif filename=='1.mps':snap='2008-05-10-realtime'
-        else:raise ValueError(f'Snapshot metadata must be confirmed before adding: {filename}')
+        digest=hashlib.sha256(Path(source).read_bytes()).hexdigest()
+        snap=opts.snapshot[i] if opts.snapshot else KNOWN_SNAPSHOTS.get(digest)
+        if snap is None:
+            raise ValueError(f'Unknown snapshot {filename} ({digest}): specify --snapshot to avoid false dating')
         rec,sha=parse(source,snap)
         records.extend(rec)
-        hashes[filename]={'sha256':sha,'records':len(rec)}
+        hashes[filename]={'sha256':sha,'records':len(rec),'snapshot':snap}
     out=Path(opts.output_dir)
     out.mkdir(parents=True,exist_ok=True)
     detail_columns=['snapshot','source_file','source_oid','callsign','icon_gid','icon_group','icon',
                     'received_at_raw','data_at_raw','speed_raw','direction_raw','reported_group_code',
                     'message','redactions']
-    write(out/'navitra-gps-packet-2007-2008-observations.csv',detail_columns,records)
+    write(out/f'{opts.prefix}-observations.csv',detail_columns,records)
     unique=collections.OrderedDict()
     for rec in records:
         key=(rec['callsign'],rec['icon'],rec['_unredacted_message'])
@@ -138,7 +150,7 @@ def main():
                          'icon':rec['icon'],'message':rec['message']}
         elif rec['snapshot'] not in unique[key]['snapshot'].split(';'):
             unique[key]['snapshot']+=';'+rec['snapshot']
-    write(out/'navitra-gps-packet-2007-2008.csv', ['snapshot','callsign','category','icon','message'],list(unique.values()))
+    write(out/f'{opts.prefix}.csv', ['snapshot','callsign','category','icon','message'],list(unique.values()))
     count=collections.Counter(r['redactions'] for r in records)
     print(json.dumps({'sources':hashes,'observations':len(records),'unique_messages':len(unique),
         'nonzero_speed':sum(float(r['speed_raw'])>0 for r in records),
