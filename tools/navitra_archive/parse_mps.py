@@ -10,12 +10,27 @@ Alps Mapping's MapServer Script was a proprietary map-overlay interchange
 format documented for ProAtlas and other client-side desktop maps. It is
 unrelated to the open-source MapServer (UMN/OSGeo) software.
 Historical references:
+  Alps Mapping, MapServer Script Specification Ver.1.32 (draft), 2001-06-29
+  (Wayback capture 2006-11-26):
+  https://web.archive.org/web/20061126121438/http://www.alpsmap.co.jp/mapserv/mapsrvr.html
   https://web.archive.org/web/20080524205732/http://www.alpsmap.co.jp/mapserv/
   https://www.pitecan.com/UnixMagazine/PDF/if9903.pdf
 
-This parser only supports the documented subset observed in two gps-packet.net
-MPS version 1.0 files (hierarchical group/point information). It is not a
-general-purpose implementation of all MapServer Script versions or commands.
+The 2001 specification defines the .mps extension, MIME type
+application/x-mapserver, script delimiting commands, hierarchical group IDs
+(up to 7 levels), three coordinate notations (decimal degrees, D/M, D/M/S),
+the kanji encoding selector (Shift_JIS by default), optional 'georef', and
+the addon 'updatable=yes' behavior. It does NOT establish that all
+historical locations are WGS84 when 'georef' is omitted.
+The original specification page itself is EUC-JP HTML, unlike the archived
+MPS data (CP932/Shift_JIS).
+
+This parser only supports the subset observed in two gps-packet.net MPS
+version 1.0 files (hierarchical group/point information). Version 1.32 is
+the edition of the specification, not proof that these files contain every
+command or variant described therein. For example, disp area="current"
+is present in the 2007/2008 files but not among the disp forms listed in
+the 2001 specification. This is not a general-purpose MapServer Script parser.
 
 No latitude, longitude, tracking URL, or other point location is emitted.
 Retention of callsigns and old messages is intended for historical study.
