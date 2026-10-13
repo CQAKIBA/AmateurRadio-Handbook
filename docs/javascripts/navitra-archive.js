@@ -26,7 +26,7 @@
     let current = 0;
     let matching = rows;
     function show() {
-      const perPage = Number(pageSize.value) || 50;
+      const perPage = Number(pageSize.value) || 1000;
       const pages = Math.max(1, Math.ceil(matching.length / perPage));
       current = Math.min(Math.max(current, 0), pages - 1);
       const visible = new Set(matching.slice(current * perPage, (current + 1) * perPage));
