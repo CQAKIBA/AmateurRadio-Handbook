@@ -1,0 +1,110 @@
+{
+  "snapshots": [
+    {
+      "snapshot": "2005-02-09-week",
+      "source_file": "0(1).mps",
+      "aliases": [
+        "0(1).mps",
+        "0(2).mps"
+      ],
+      "sha256": "a77eed6a79fd14dbf0772233cef68ab1383686d50d3b62b13f54de93f46a1722",
+      "updated_at": "2005-02-09 00:09:21",
+      "period": "week",
+      "count": 276
+    },
+    {
+      "snapshot": "2005-02-09-realtime",
+      "source_file": "1(1).mps",
+      "aliases": [
+        "1(1).mps",
+        "1(2).mps"
+      ],
+      "sha256": "e36e7884a9121899327704e75b2d8e4c8de40d9ec7f6d9a1ea58a8681f35fab3",
+      "updated_at": "2005-02-09 00:09:46",
+      "period": "realtime",
+      "count": 34
+    },
+    {
+      "snapshot": "2006-04-26-week",
+      "source_file": "0(3).mps",
+      "aliases": [
+        "0(3).mps"
+      ],
+      "sha256": "113fbf8f6017b3df7acfa8cf2972e633965d7efd1412daebaaf871987f5bdb76",
+      "updated_at": "2006-04-26 14:09:32",
+      "period": "week",
+      "count": 234
+    },
+    {
+      "snapshot": "2006-04-26-realtime",
+      "source_file": "1(3).mps",
+      "aliases": [
+        "1(3).mps"
+      ],
+      "sha256": "c94be86e96b2221ff7d1cf875ec6ad70f8c1d7b651cd297061d172b771e6aa49",
+      "updated_at": "2006-04-26 14:12:15",
+      "period": "realtime",
+      "count": 62
+    },
+    {
+      "snapshot": "2006-10-17-week",
+      "source_file": "0(4).mps",
+      "aliases": [
+        "0(4).mps"
+      ],
+      "sha256": "f2750c15592fcec3b8e659e1a1994a6368b3a130ce415b99add0654ea6713298",
+      "updated_at": "2006-10-17 17:03:48",
+      "period": "week",
+      "count": 214
+    },
+    {
+      "snapshot": "2006-10-18-realtime",
+      "source_file": "1(4).mps",
+      "aliases": [
+        "1(4).mps"
+      ],
+      "sha256": "5a79fbdcd09a7394e71b4be0ac603b4124651ebe45fdf37a30ae52355e065f6c",
+      "updated_at": "2006-10-18 01:35:51",
+      "period": "realtime",
+      "count": 35
+    },
+    {
+      "snapshot": "2007-07-15-realtime",
+      "source_file": "1(5).mps",
+      "aliases": [
+        "1(5).mps"
+      ],
+      "sha256": "d78a1b32b3cc54068295844da7f0d3fd2e35baec06f607e4cb69878375832cb9",
+      "updated_at": "2007-07-15 21:12:23",
+      "period": "realtime",
+      "count": 40
+    },
+    {
+      "snapshot": "2007-07-18-week",
+      "source_file": "0(5).mps",
+      "aliases": [
+        "0(5).mps",
+        "0.mps"
+      ],
+      "sha256": "affc5c20b39243157e507493da244056d864e805d62524b4ad7c572f5bd9e781",
+      "updated_at": "2007-07-18 14:06:42",
+      "period": "week",
+      "count": 208
+    },
+    {
+      "snapshot": "2008-05-10-realtime",
+      "source_file": "1(6).mps",
+      "aliases": [
+        "1(6).mps",
+        "1.mps"
+      ],
+      "sha256": "ac65ea66e9ed8181a17a918172a856f7406a89013bcffa6d766af28598028886",
+      "updated_at": "2008-05-10 06:50:13",
+      "period": "realtime",
+      "count": 49
+    }
+  ],
+  "total_observations": 1152,
+  "unique_messages": 728,
+  "note": "All source hashes SHA256; source bytes not republished"
+}
