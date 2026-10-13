@@ -17,6 +17,7 @@
     const pageStatus = $('navitra-page-status');
     const prev = $('navitra-prev');
     const next = $('navitra-next');
+    const pager = root.querySelector('.navitra-pager');
     const rows = Array.from(root.querySelectorAll('tbody tr')).map(tr => ({
       tr,
       year: tr.dataset.years.split(' '),
@@ -33,6 +34,7 @@
       for (const row of rows) row.tr.hidden = !visible.has(row);
       status.textContent = `${matching.length}種類に一致（元の観測記録は1,152件・全728種類）。`;
       pageStatus.textContent = `${current + 1} / ${pages} ページ`;
+      pager.hidden = pages <= 1;
       prev.disabled = current === 0;
       next.disabled = current >= pages - 1;
     }
