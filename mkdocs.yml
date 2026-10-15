@@ -32,6 +32,9 @@ nav:
       - ナビトラ受信ログ検索（2005～2008）: 07_デジタル通信・コンピュータ/ナビトラ受信ログ一覧.md
   - 活動・コミュニティ:
       - クラブ・サークル紹介: clubs/index.md
+  - 企業・メーカー:
+      - 企業・メーカー史: 16_企業・メーカー/index.md
+      - マキ電機: 16_企業・メーカー/マキ電機.md
   - 歴史:
       - 日本のアマチュア無線のはじまり: 15_歴史/日本のアマチュア無線のはじまり.md
       - アマチュア無線と通信技術の歴史: 15_歴史/history.md
@@ -53,6 +56,9 @@ theme:
     - search.highlight
     - content.action.edit
     - content.code.copy
+
+hooks:
+  - hooks/club_directory.py
 
 markdown_extensions:
   - tables
