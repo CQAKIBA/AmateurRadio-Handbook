@@ -152,12 +152,10 @@ html.handbook-wide-layout .md-main__inner.md-grid {
     margin-inline: 0;
   }
 
-  html.handbook-wide-layout .md-sidebar--secondary:not([hidden]) ~ .md-content > .md-content__inner {
-    margin-right: 0;
-  }
-
+  html.handbook-wide-layout .md-sidebar--secondary:not([hidden]) ~ .md-content > .md-content__inner,
   html.handbook-wide-layout .md-sidebar--primary:not([hidden]) ~ .md-content > .md-content__inner {
     margin-left: 0;
+    margin-right: 0;
   }
 }
 
