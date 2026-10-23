@@ -145,6 +145,22 @@ html.handbook-wide-layout .md-main__inner.md-grid {
   max-width: none;
 }
 
+/* Maximize usable article space in wide mode. Keep vertical spacing intact.
+   The sidebar-specific rules override Material's higher-specificity margins. */
+@media screen and (min-width: 76.25em) {
+  html.handbook-wide-layout .md-content__inner {
+    margin-inline: 0;
+  }
+
+  html.handbook-wide-layout .md-sidebar--secondary:not([hidden]) ~ .md-content > .md-content__inner {
+    margin-right: 0;
+  }
+
+  html.handbook-wide-layout .md-sidebar--primary:not([hidden]) ~ .md-content > .md-content__inner {
+    margin-left: 0;
+  }
+}
+
 /* Inline control between the header's search and repository source. */
 .md-header__button.handbook-width-toggle {
   display: inline-flex;
