@@ -83,6 +83,7 @@ extra_css:
 extra_javascript:
   - https://cdn.jsdelivr.net/npm/mermaid@12.1.0/dist/mermaid.min.js
   - javascripts/mermaid-init.js
+  - javascripts/layout-width-toggle.js
   - javascripts/js-img-gallery.js
   - javascripts/bandgraph.js
   - javascripts/bandgraph-playground.js
