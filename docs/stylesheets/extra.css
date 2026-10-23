@@ -139,3 +139,48 @@ div, span, p, ul, li {
   &.purple { --color: #800080; }
   &.gray   { --color: #808080; }
 }
+
+/* Optional full-width article layout: keep the sidebars and header unchanged. */
+html.handbook-wide-layout .md-main__inner.md-grid {
+  max-width: none;
+}
+
+/* Maximize usable article space in wide mode. Keep vertical spacing intact.
+   The sidebar-specific rules override Material's higher-specificity margins. */
+@media screen and (min-width: 76.25em) {
+  html.handbook-wide-layout .md-content__inner {
+    margin-inline: 0;
+  }
+
+  html.handbook-wide-layout .md-sidebar--secondary:not([hidden]) ~ .md-content > .md-content__inner,
+  html.handbook-wide-layout .md-sidebar--primary:not([hidden]) ~ .md-content > .md-content__inner {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+/* Inline control between the header's search and repository source. */
+.md-header__button.handbook-width-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  cursor: pointer;
+}
+
+.md-header__button.handbook-width-toggle[aria-pressed="true"] {
+  background-color: rgba(255, 255, 255, 0.18);
+  border-radius: 0.15rem;
+}
+
+.md-header__button.handbook-width-toggle:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: -2px;
+}
+
+/* At tablet/mobile widths there is no useful extra article space. */
+@media screen and (max-width: 76.234375em) {
+  .md-header__button.handbook-width-toggle {
+    display: none;
+  }
+}
